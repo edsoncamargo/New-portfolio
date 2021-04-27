@@ -1,0 +1,157 @@
+.home {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  .hello {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    &.opening {
+      &::before {
+        position: absolute;
+        content: "";
+
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+
+        border-radius: 50%;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        transition: all 0.5s ease-in-out;
+      }
+    }
+
+    &.open {
+      &::before {
+        position: absolute;
+        content: "";
+
+        opacity: 1;
+        z-index: 2;
+
+        border-radius: 50%;
+
+        animation: 1.2s ease-in-out circle;
+      }
+
+      @keyframes circle {
+        0% {
+          background-color: #ff1053;
+          width: 0vw;
+          height: 0vh;
+        }
+        100% {
+          background-color: #000;
+          width: 3000px;
+          height: 3000px;
+        }
+      }
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 12em;
+      line-height: 0.8em;
+      color: #ff1053;
+
+      cursor: pointer;
+
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: -100px;
+        transform: translate(-50%, -50%);
+
+        background-image: url(/assets/images/svg/arrow-left.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        animation: 0.6s ease-in-out infinite alternate arrow-left;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        right: -100px;
+        transform: translate(-50%, -50%);
+
+        background-image: url(/assets/images/svg/arrow-right.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        animation: 0.6s ease-in-out infinite alternate arrow-right;
+      }
+
+      @keyframes arrow-left {
+        from {
+          left: -100px;
+        }
+        to {
+          left: -150px;
+        }
+      }
+
+      @keyframes arrow-right {
+        from {
+          right: -100px;
+        }
+        to {
+          right: -150px;
+        }
+      }
+    }
+  }
+
+  .left {
+    width: calc(50% - 2px);
+    margin-right: 2px;
+    background-color: #000;
+
+    border-right: #ff1053 1px solid;
+
+    transition: all 1s ease-out;
+
+    &.open {
+      transform: translateX(-3000px);
+    }
+  }
+
+  .right {
+    width: calc(50% - 2px);
+    margin-left: 2px;
+    background-color: #000;
+
+    border-left: #ff1053 1px solid;
+
+    transition: all 1s ease-out;
+
+    &.open {
+      transform: translateX(3000px);
+    }
+  }
+}
