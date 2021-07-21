@@ -31,7 +31,7 @@
       animation: 1.2s ease-in-out circle; }
 @keyframes circle {
   0% {
-    background-color: #494cab;
+    background-color: #ff1053;
     width: 0vw;
     height: 0vh; }
   100% {
@@ -43,7 +43,7 @@
       font-weight: 900;
       font-size: 12em;
       line-height: 0.8em;
-      color: #494cab;
+      color: #ff1053;
       cursor: pointer;
       position: relative; }
       .home .hello h1::after {
@@ -58,7 +58,6 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        filter: invert(35%) sepia(49%) saturate(885%) hue-rotate(200deg) brightness(83%) contrast(93%);
         animation: 0.6s ease-in-out infinite alternate arrow-left; }
       .home .hello h1::before {
         position: absolute;
@@ -72,7 +71,6 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        filter: invert(35%) sepia(49%) saturate(885%) hue-rotate(200deg) brightness(83%) contrast(93%);
         animation: 0.6s ease-in-out infinite alternate arrow-right; }
 @keyframes arrow-left {
   from {
@@ -88,7 +86,7 @@
     width: calc(50% - 2px);
     margin-right: 2px;
     background-color: #000;
-    border-right: #494cab 1px solid;
+    border-right: #ff1053 1px solid;
     transition: all 1s ease-out; }
     .home .left.open {
       transform: translateX(-3000px); }
@@ -96,23 +94,13 @@
     width: calc(50% - 2px);
     margin-left: 2px;
     background-color: #000;
-    border-left: #494cab 1px solid;
+    border-left: #ff1053 1px solid;
     transition: all 1s ease-out; }
     .home .right.open {
       transform: translateX(3000px); }
 
 .container {
-  position: relative;
-  background: linear-gradient(#2b2994, #494cab);
-  overflow: hidden; }
-  .container::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    height: 200px;
-    width: 100%;
-    background: linear-gradient(to top, #494cab, transparent);
-    z-index: 200; }
+  background: linear-gradient(#2b2994, #494cab); }
   .container .parallax-container {
     width: 100%;
     height: 100%;
@@ -197,16 +185,11 @@
   background-color: #494cab;
   position: relative;
   padding: 100px; }
-  .about-container h2 {
-    margin-bottom: 40px; }
 
 * {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif; }
-
-body {
-  overflow-x: hidden; }
 
 .container {
   opacity: 0;

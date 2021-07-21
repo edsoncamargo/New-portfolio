@@ -1,5 +1,21 @@
 .container {
+  position: relative;
   background: linear-gradient(#2b2994, #494cab);
+
+  overflow: hidden;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+
+    height: 200px;
+    width: 100%;
+
+    background: linear-gradient(to top, #494cab, transparent);
+    z-index: 200;
+  }
 
   .parallax-container {
     width: 100%;
@@ -135,19 +151,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes blink {
-  0% {
-    text-shadow: 0 0 15px red;
-  }
-
-  50% {
-    text-shadow: none;
-  }
-
-  100% {
-    text-shadow: 0 0 15px red;
   }
 }
