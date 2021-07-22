@@ -171,7 +171,7 @@
         font-size: 1em;
         font-weight: 100;
         letter-spacing: 8px;
-        animation: 1.2s ease-out am; }
+        animation: all 1.2s ease-out am; }
 @keyframes am {
   0% {
     transform: translateY(50px); }
@@ -181,7 +181,7 @@
         font-size: 8vw;
         font-weight: 900;
         letter-spacing: 12px;
-        animation: 1.2s ease-in-out name; }
+        animation: all 1.2s ease-in-out name; }
 @keyframes name {
   0% {
     letter-spacing: 100px; }
@@ -195,7 +195,7 @@
         font-weight: 100;
         letter-spacing: 8px;
         line-height: 25px;
-        animation: 1.2s ease-out title; }
+        animation: all 1.2s ease-out title; }
 @keyframes title {
   0% {
     transform: translateY(-50px); }

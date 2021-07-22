@@ -98,6 +98,8 @@ function initMouseParallaxEffect() {
           const y = (screen.height - e.pageY * speed) / 100;
           element.style.transform = `translate(${x}px, ${y}px)`;
           element.style.transform = `translate(${x}px, ${y}px)`;
+
+          console.log(screen.width - e.pageX)
         });
       } else {
         userHasScrolled = false;
