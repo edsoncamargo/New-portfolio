@@ -162,7 +162,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: #fff; }
+      color: #fff;
+      position: relative; }
       .container .introduction-container .introduction-container-text span.am {
         align-self: start;
         margin-left: 50px;

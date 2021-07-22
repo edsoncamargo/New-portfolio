@@ -1,6 +1,4 @@
 function openHomeDoors() {
-  console.log('Entrei...')
-
   cursor.setAttribute('style', 'top: auto; left: auto; opacity: 0;');
 
   setTimeout(function () {
@@ -9,8 +7,6 @@ function openHomeDoors() {
 
   document.querySelector(".left").classList.add("open");
   document.querySelector(".right").classList.add("open");
-
-
 
   setTimeout(function () {
     document.getElementById("hello").classList.add("open");
@@ -24,6 +20,7 @@ function openHomeDoors() {
         document.getElementById("about").classList.remove("d-none");
 
         initParallaxEffect();
+        initMouseParallaxEffect();
 
         document.querySelector("body").style.backgroundColor = "#000";
 
@@ -76,4 +73,35 @@ function initParallaxEffect() {
     am.style.transform = `translateX(${value * -1.30}px)`;
     title.style.transform = `translateX(${value * 1.30}px)`;
   })
+}
+
+function initMouseParallaxEffect() {
+  var userHasScrolled = false;
+
+  window.onscroll = function (e) {
+    userHasScrolled = true;
+  }
+
+  document.addEventListener('mousemove', (e) => {
+    const parallaxContainer = document.querySelector('.parallax-container');
+    const parallaxContainerX = parallaxContainer.getBoundingClientRect().x;
+    const parallaxContainerY = parallaxContainer.getBoundingClientRect().y;
+    const parallaxContainerW = parallaxContainer.getBoundingClientRect().width;
+    const parallaxContainerH = parallaxContainer.getBoundingClientRect().height;
+
+    if ((e.pageX > parallaxContainerX && e.pageX < parallaxContainerX + parallaxContainerW) &&
+      (e.pageY > parallaxContainerY && e.pageY < parallaxContainerY + parallaxContainerH)) {
+      if (userHasScrolled === false) {
+        document.querySelectorAll('.layer').forEach(element => {
+          const speed = element.getAttribute('data-speed');
+          const x = (screen.width - e.pageX * speed) / 100;
+          const y = (screen.height - e.pageY * speed) / 100;
+          element.style.transform = `translate(${x}px, ${y}px)`;
+          element.style.transform = `translate(${x}px, ${y}px)`;
+        });
+      } else {
+        userHasScrolled = false;
+      }
+    }
+  });
 }
