@@ -33,3 +33,76 @@ body {
 .d-none {
   display: none;
 }
+
+.cursor {
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  border-radius: 50px;
+  position: absolute;
+
+  z-index: 1000;
+
+  animation: cursor-animation .5s infinite alternate;
+  animation: opacity .1s ease-in-out;
+
+  display: none;
+
+  &::after {
+    content: '';
+
+    width: 80px;
+    height: 80px;
+
+    position: absolute;
+
+    border: 25px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+
+    top: -25px;
+    left: -25px;
+
+    animation: cursor-animation-two .5s infinite alternate
+  }
+
+  &.expand {
+    animation: cursor-animation-three .5s forwards;
+    border: 8px solid #2b2994;
+  }
+}
+
+@keyframes cursor-animation {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(.7);
+  }
+}
+
+@keyframes cursor-animation-two {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(.4);
+  }
+}
+
+@keyframes cursor-animation-three {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(3);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

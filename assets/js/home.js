@@ -1,4 +1,10 @@
 function openHomeDoors() {
+  cursor.setAttribute('style', 'top: auto; left: auto; opacity: 0;');
+
+  setTimeout(function () {
+    cursor.setAttribute('style', 'top: auto; left: auto; display: none;');
+  }, 100);
+
   document.querySelector(".left").classList.add("open");
   document.querySelector(".right").classList.add("open");
 
@@ -46,16 +52,23 @@ function initParallaxEffect() {
 
     moon.style.transform = `translateY(${value * 1.05}px)`;
 
-    montainsLeft.style.transform = `translateX(${value * -0.2}px)`;
-    stoneLeft1.style.transform = `translate(${value * -0.35}px, ${value * -0.35}px)`;
-    stoneLeft2.style.transform = `translate(${value * -0.25}px, ${value * -0.25}px)`;
+    montainsLeft.style.transform = `translateX(${value * -0.1}px)`;
 
-    montainsRight.style.transform = `translateX(${value * 0.2}px)`;
-    stoneRight1.style.transform = `translate(${value * 0.25}px, ${value * -0.25}px)`;
-    stoneRight2.style.transform = `translate(${value * 0.35}px, ${value * -0.35}px)`;
+    stoneLeft1.style.top = `${value * -0.35}px`;
+    stoneLeft1.style.left = `${value * -0.35}px`;
+
+    stoneLeft2.style.top = `${value * -0.25}px`;
+    stoneLeft2.style.left = `${value * -0.25}px`;
+
+    montainsRight.style.transform = `translateX(${value * 0.1}px)`;
+
+    stoneRight1.style.top = `${value * -0.10}px`;
+    stoneRight1.style.right = `${value * -0.25}px`;
+
+    stoneRight2.style.top = `${value * -0.15}px`;
+    stoneRight2.style.right = `${value * -0.35}px`;
 
     name.style.transform = `translateY(${value * 1.30}px)`;
-
     am.style.transform = `translateX(${value * -1.30}px)`;
     title.style.transform = `translateX(${value * 1.30}px)`;
   })

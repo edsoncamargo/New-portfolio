@@ -70,11 +70,11 @@
       line-height: 0.8em;
       color: #494cab;
 
-      cursor: pointer;
+      pointer-events: none;
 
       position: relative;
 
-      &::after {
+      &::before {
         position: absolute;
         content: "";
         width: 100px;
@@ -89,10 +89,10 @@
         background-repeat: no-repeat;
         filter: invert(35%) sepia(49%) saturate(885%) hue-rotate(200deg) brightness(83%) contrast(93%);
 
-        animation: 0.6s ease-in-out infinite alternate arrow-left;
+        animation: 0.6s ease-in-out infinite alternate arrow-right;
       }
 
-      &::before {
+      &::after {
         position: absolute;
         content: "";
         width: 100px;
@@ -107,10 +107,10 @@
         background-repeat: no-repeat;
         filter: invert(35%) sepia(49%) saturate(885%) hue-rotate(200deg) brightness(83%) contrast(93%);
 
-        animation: 0.6s ease-in-out infinite alternate arrow-right;
+        animation: 0.6s ease-in-out infinite alternate arrow-left;
       }
 
-      @keyframes arrow-left {
+      @keyframes arrow-right {
         from {
           left: -100px;
         }
@@ -120,13 +120,13 @@
         }
       }
 
-      @keyframes arrow-right {
+      @keyframes arrow-left {
         from {
-          right: -100px;
+          right: -200px;
         }
 
         to {
-          right: -150px;
+          right: -250px;
         }
       }
     }

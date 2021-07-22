@@ -44,9 +44,9 @@
       font-size: 12em;
       line-height: 0.8em;
       color: #494cab;
-      cursor: pointer;
+      pointer-events: none;
       position: relative; }
-      .home .hello h1::after {
+      .home .hello h1::before {
         position: absolute;
         content: "";
         width: 100px;
@@ -59,8 +59,8 @@
         background-size: contain;
         background-repeat: no-repeat;
         filter: invert(35%) sepia(49%) saturate(885%) hue-rotate(200deg) brightness(83%) contrast(93%);
-        animation: 0.6s ease-in-out infinite alternate arrow-left; }
-      .home .hello h1::before {
+        animation: 0.6s ease-in-out infinite alternate arrow-right; }
+      .home .hello h1::after {
         position: absolute;
         content: "";
         width: 100px;
@@ -73,17 +73,17 @@
         background-size: contain;
         background-repeat: no-repeat;
         filter: invert(35%) sepia(49%) saturate(885%) hue-rotate(200deg) brightness(83%) contrast(93%);
-        animation: 0.6s ease-in-out infinite alternate arrow-right; }
-@keyframes arrow-left {
+        animation: 0.6s ease-in-out infinite alternate arrow-left; }
+@keyframes arrow-right {
   from {
     left: -100px; }
   to {
     left: -150px; } }
-@keyframes arrow-right {
+@keyframes arrow-left {
   from {
-    right: -100px; }
+    right: -200px; }
   to {
-    right: -150px; } }
+    right: -250px; } }
   .home .left {
     width: calc(50% - 2px);
     margin-right: 2px;
@@ -134,15 +134,23 @@
       .container .parallax-container img#montainsLeft {
         z-index: 100; }
       .container .parallax-container img#stoneLeft1 {
-        z-index: 15; }
+        z-index: 15;
+        animation: pulse 3.6s ease-in-out infinite alternate; }
       .container .parallax-container img#stoneLeft2 {
-        z-index: 20; }
+        z-index: 20;
+        animation: pulse 1.6s ease-in-out infinite alternate; }
       .container .parallax-container img#montainsRight {
         z-index: 90; }
       .container .parallax-container img#stoneRight1 {
-        z-index: 25; }
+        left: auto;
+        right: 0;
+        z-index: 25;
+        animation: pulse 3.3s ease-in-out infinite alternate; }
       .container .parallax-container img#stoneRight2 {
-        z-index: 30; }
+        left: auto;
+        right: 0;
+        z-index: 30;
+        animation: pulse 1.4s ease-in-out infinite alternate; }
   .container .introduction-container {
     height: 100vh;
     display: flex;
@@ -169,7 +177,7 @@
   100% {
     transform: translateY(0px); } }
       .container .introduction-container .introduction-container-text h1.name {
-        font-size: 10em;
+        font-size: 8vw;
         font-weight: 900;
         letter-spacing: 12px;
         animation: 1.2s ease-in-out name; }
@@ -192,6 +200,11 @@
     transform: translateY(-50px); }
   100% {
     transform: translateY(0px); } }
+@keyframes pulse {
+  0% {
+    transform: translate(0px, 0px); }
+  100% {
+    transform: translate(5px, 15px); } }
 .about-container {
   color: #fff;
   background-color: #494cab;
@@ -220,5 +233,49 @@ body {
 
 .d-none {
   display: none; }
+
+.cursor {
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 1000;
+  animation: cursor-animation .5s infinite alternate;
+  animation: opacity .1s ease-in-out;
+  display: none; }
+  .cursor::after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border: 25px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -25px;
+    left: -25px;
+    animation: cursor-animation-two 0.5s infinite alternate; }
+  .cursor.expand {
+    animation: cursor-animation-three .5s forwards;
+    border: 8px solid #2b2994; }
+
+@keyframes cursor-animation {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0.7); } }
+@keyframes cursor-animation-two {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0.4); } }
+@keyframes cursor-animation-three {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(3); }
+  100% {
+    transform: scale(1);
+    opacity: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

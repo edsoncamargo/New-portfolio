@@ -52,10 +52,12 @@
 
       &#stoneLeft1 {
         z-index: 15;
+        animation: pulse 3.6s ease-in-out infinite alternate;
       }
 
       &#stoneLeft2 {
         z-index: 20;
+        animation: pulse 1.6s ease-in-out infinite alternate;
       }
 
       &#montainsRight {
@@ -63,11 +65,19 @@
       }
 
       &#stoneRight1 {
+        left: auto;
+        right: 0;
+
         z-index: 25;
+        animation: pulse 3.3s ease-in-out infinite alternate;
       }
 
       &#stoneRight2 {
+        left: auto;
+        right: 0;
+
         z-index: 30;
+        animation: pulse 1.4s ease-in-out infinite alternate;
       }
     }
   }
@@ -111,7 +121,7 @@
       }
 
       h1.name {
-        font-size: 10em;
+        font-size: 8vw;
         font-weight: 900;
         letter-spacing: 12px;
 
@@ -151,5 +161,15 @@
         }
       }
     }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    transform: translate(5px, 15px);
   }
 }
