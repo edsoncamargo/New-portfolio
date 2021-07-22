@@ -1,4 +1,6 @@
 function openHomeDoors() {
+  console.log('Entrei...')
+
   cursor.setAttribute('style', 'top: auto; left: auto; opacity: 0;');
 
   setTimeout(function () {
@@ -7,6 +9,8 @@ function openHomeDoors() {
 
   document.querySelector(".left").classList.add("open");
   document.querySelector(".right").classList.add("open");
+
+
 
   setTimeout(function () {
     document.getElementById("hello").classList.add("open");
