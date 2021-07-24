@@ -213,6 +213,30 @@
   padding: 100px; }
   .about-container h2 {
     margin-bottom: 40px; }
+  .about-container-skills {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 92px; }
+    .about-container-skills-top, .about-container-skills-bottom {
+      display: flex;
+      position: absolute; }
+      .about-container-skills-top p, .about-container-skills-bottom p {
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 50px;
+        letter-spacing: 6px;
+        white-space: nowrap;
+        color: rgba(238, 238, 238, 0.55);
+        margin-left: 50px;
+        margin-right: 50px; }
+    .about-container-skills-top {
+      top: 0;
+      left: 400px; }
+    .about-container-skills-bottom {
+      bottom: 0;
+      left: -400px; }
 
 * {
   margin: 0;

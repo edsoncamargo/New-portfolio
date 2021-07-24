@@ -21,6 +21,7 @@ function openHomeDoors() {
 
         initParallaxEffect();
         initMouseParallaxEffect();
+        initSkillsEffect();
 
         document.querySelector("body").style.backgroundColor = "#000";
 

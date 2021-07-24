@@ -8,4 +8,45 @@
     h2 {
         margin-bottom: 40px;
     }
+
+    &-skills {
+        min-height: 150px;
+
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+
+        margin-bottom: 92px;
+
+        &-top,
+        &-bottom {
+            display: flex;
+
+            position: absolute;
+
+            p {
+                font-size: 50px;
+                font-weight: 300;
+                line-height: 50px;
+                letter-spacing: 6px;
+                white-space: nowrap;
+                color: hsla(0, 0%, 93.3%, .55);
+
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+
+        &-top {
+            top: 0;
+            left: 400px;
+        }
+
+        &-bottom {
+            bottom: 0;
+            left: -400px;
+            ;
+        }
+    }
 }
