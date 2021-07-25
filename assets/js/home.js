@@ -3,27 +3,31 @@ function openHomeDoors() {
 
   setTimeout(function () {
     cursor.setAttribute('style', 'top: auto; left: auto; display: none;');
+
+    document.querySelector(".left").classList.add("open");
+    document.querySelector(".right").classList.add("open");
   }, 100);
 
-  document.querySelector(".left").classList.add("open");
-  document.querySelector(".right").classList.add("open");
 
   setTimeout(function () {
     document.getElementById("hello").classList.add("open");
 
     setTimeout(function () {
       setTimeout(function () {
+        document.querySelector("body").style.backgroundColor = "#000";
+
         document.getElementById("home").classList.add("d-none");
         document.getElementById("hello").classList.remove("opening");
+
         document.getElementById("hello").classList.remove("open");
+
         document.getElementById("main").classList.remove("d-none");
         document.getElementById("about").classList.remove("d-none");
+        document.getElementById("projects").classList.remove("d-none");
 
         initParallaxEffect();
         initMouseParallaxEffect();
         initSkillsEffect();
-
-        document.querySelector("body").style.backgroundColor = "#000";
 
         setTimeout(function () {
           document.getElementById("main").classList.add("open");
