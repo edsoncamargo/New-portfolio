@@ -257,11 +257,12 @@
   background-color: #494cab;
   position: relative;
   padding: 100px;
-  padding-bottom: 24px;
+  padding-bottom: 0px;
   overflow-x: hidden; }
   @media (max-width: 767px) {
     .about-container {
-      padding: 24px; } }
+      padding: 24px;
+      padding-bottom: 0px; } }
   .about-container-skills {
     min-height: 150px;
     display: flex;
@@ -306,7 +307,8 @@
   color: #fff;
   background-color: #494cab;
   position: relative;
-  padding: 50px 100px; }
+  padding: 50px 100px;
+  padding-top: 100px; }
   @media (max-width: 767px) {
     .projects-container {
       padding: 24px; } }
@@ -325,7 +327,6 @@
       position: relative;
       color: #000;
       background-repeat: no-repeat;
-      border: 2px solid transparent;
       padding: 24px;
       margin-right: 24px;
       margin-bottom: 50px;
@@ -349,7 +350,8 @@
       .projects-container .projects-container-cards .projects-container-card:nth-child(3) {
         background: linear-gradient(180deg, #efa971, #e4cafe); }
       .projects-container .projects-container-cards .projects-container-card:nth-child(4) {
-        background: linear-gradient(180deg, #f3cbab, #feedca); }
+        background: linear-gradient(180deg, #f3cbab, #feedca);
+        margin-bottom: 0px; }
       .projects-container .projects-container-cards .projects-container-card:before {
         content: "";
         width: 0%;
@@ -388,7 +390,7 @@
           justify-content: flex-end;
           margin-right: 8px;
           cursor: pointer; }
-          .projects-container .projects-container-cards .projects-container-card-links a:nth-child(2) {
+          .projects-container .projects-container-cards .projects-container-card-links a.mr-none {
             margin-right: 0px; }
           .projects-container .projects-container-cards .projects-container-card-links a .icon {
             width: 20px;
@@ -399,7 +401,7 @@
             .projects-container .projects-container-cards .projects-container-card-links a .icon.github {
               background-image: url(/assets/images/svg/github-brands.svg); }
             .projects-container .projects-container-cards .projects-container-card-links a .icon.expand {
-              background-image: url(/assets/images/svg/expand-solid.svg); }
+              background-image: url(/assets/images/svg/external-link-alt-solid.svg); }
       .projects-container .projects-container-cards .projects-container-card-title {
         font-size: 22px;
         letter-spacing: -1px; }
@@ -423,6 +425,31 @@
             font-size: 0.8em;
             letter-spacing: 3px;
             margin-right: 10px; }
+
+.works-container {
+  color: #fff;
+  background-color: #494cab;
+  position: relative;
+  padding: 62px 100px;
+  overflow-x: hidden; }
+  @media (max-width: 767px) {
+    .works-container {
+      padding: 24px; } }
+  .works-container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start; }
+    .works-container-cards-item {
+      padding: 24px;
+      margin-right: 24px; }
+      .works-container-cards-item:nth-child(1) {
+        background: #fff; }
+      .works-container-cards-item:nth-child(2) {
+        background: #fff; }
+      .works-container-cards-item:nth-child(3) {
+        background: #fc1f49; }
 
 * {
   margin: 0;
@@ -451,10 +478,13 @@ body {
   .title-container h2 {
     font-size: 1.3rem;
     letter-spacing: 10px;
-    color: rgba(238, 238, 238, 0.55); }
+    color: rgba(238, 238, 238, 0.55);
+    text-transform: uppercase; }
     @media (max-width: 767px) {
       .title-container h2 {
-        font-size: 1rem; } }
+        max-width: 250px;
+        font-size: 1rem;
+        margin-bottom: 16px; } }
   .title-container h3 {
     font-size: 4rem;
     letter-spacing: -1px;
@@ -462,7 +492,8 @@ body {
     @media (max-width: 767px) {
       .title-container h3 {
         max-width: 273px;
-        font-size: 2.5rem; } }
+        font-size: 2.5rem;
+        line-height: 40px; } }
 
 .text-container p {
   letter-spacing: 3px;

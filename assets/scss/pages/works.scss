@@ -1,0 +1,40 @@
+.works-container {
+    color: #fff;
+    background-color: #494cab;
+
+    position: relative;
+
+    padding: 62px 100px;
+
+    overflow-x: hidden;
+
+    @media (max-width: 767px) {
+        padding: 24px;
+    }
+
+    &-cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+
+
+        &-item {
+            padding: 24px;
+            margin-right: 24px;
+
+            &:nth-child(1) {
+                background: #fff;
+            }
+
+            &:nth-child(2) {
+                background: #fff;
+            }
+
+            &:nth-child(3) {
+                background: #fc1f49;
+            }
+        }
+    }
+}

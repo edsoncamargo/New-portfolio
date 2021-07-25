@@ -3,13 +3,15 @@
     background-color: #494cab;
 
     position: relative;
+
     padding: 100px;
-    padding-bottom: 24px;
+    padding-bottom: 0px;
 
     overflow-x: hidden;
 
     @media (max-width: 767px) {
         padding: 24px;
+        padding-bottom: 0px;
     }
 
     &-skills {

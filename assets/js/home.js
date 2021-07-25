@@ -24,6 +24,7 @@ function openHomeDoors() {
         document.getElementById("main").classList.remove("d-none");
         document.getElementById("about").classList.remove("d-none");
         document.getElementById("projects").classList.remove("d-none");
+        document.getElementById("works").classList.remove("d-none");
 
         initParallaxEffect();
         initMouseParallaxEffect();
