@@ -43,6 +43,10 @@ body {
     font-size: 1.3rem;
     letter-spacing: 10px;
     color: rgba(238, 238, 238, 0.55);
+
+    @media (max-width: 767px) {
+      font-size: 1rem;
+    }
   }
 
   h3 {
@@ -50,6 +54,11 @@ body {
     letter-spacing: -1px;
 
     text-transform: capitalize;
+
+    @media (max-width: 767px) {
+      max-width: 273px;
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -96,12 +105,12 @@ body {
 
     position: absolute;
 
-    border: 25px solid gray;
+    border: 40px solid gray;
     border-radius: 50%;
     opacity: .5;
 
-    top: -25px;
-    left: -25px;
+    top: -42px;
+    left: -42px;
 
     animation: cursor-animation-two .5s infinite alternate
   }

@@ -58,7 +58,9 @@ function initParallaxEffect() {
 
     moon.style.transform = `translateY(${value * 1.05}px)`;
 
-    montainsLeft.style.transform = `translateX(${value * -0.1}px)`;
+    if (window.screen.availWidth >= 1180) {
+      montainsLeft.style.transform = `translateX(${value * -0.1}px)`;
+    }
 
     stoneLeft1.style.top = `${value * -0.35}px`;
     stoneLeft1.style.left = `${value * -0.35}px`;
@@ -66,7 +68,9 @@ function initParallaxEffect() {
     stoneLeft2.style.top = `${value * -0.25}px`;
     stoneLeft2.style.left = `${value * -0.25}px`;
 
-    montainsRight.style.transform = `translateX(${value * 0.1}px)`;
+    if (window.screen.availWidth >= 1180) {
+      montainsRight.style.transform = `translateX(${value * 0.1}px)`;
+    }
 
     stoneRight1.style.top = `${value * -0.10}px`;
     stoneRight1.style.right = `${value * -0.25}px`;
@@ -99,12 +103,12 @@ function initMouseParallaxEffect() {
       if (userHasScrolled === false) {
         document.querySelectorAll('.layer').forEach(element => {
           const speed = element.getAttribute('data-speed');
+
           const x = (screen.width - e.pageX * speed) / 100;
           const y = (screen.height - e.pageY * speed) / 100;
-          element.style.transform = `translate(${x}px, ${y}px)`;
-          element.style.transform = `translate(${x}px, ${y}px)`;
 
-          console.log(screen.width - e.pageX)
+          element.style.transform = `translate(${x}px, ${y}px)`;
+          element.style.transform = `translate(${x}px, ${y}px)`;
         });
       } else {
         userHasScrolled = false;

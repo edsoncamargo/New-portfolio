@@ -2,8 +2,6 @@ function initSkillsEffect() {
     const aboutTop = document.getElementById('aboutTop');
     const aboutBottom = document.getElementById('aboutBottom');
 
-    console.log(aboutTop)
-
     window.addEventListener('scroll', () => {
         let value = window.scrollY;
 

@@ -5,6 +5,10 @@
     position: relative;
     padding: 50px 100px;
 
+    @media (max-width: 767px) {
+        padding: 24px;
+    }
+
     .projects-container-cards {
         display: flex;
         flex-wrap: wrap;
@@ -33,6 +37,21 @@
             margin-bottom: 50px;
 
             transition: all 0.2s ease-in-out;
+
+            @media (max-width: 1333px) and (min-width: 1295px) {
+                flex-basis: 45%;
+            }
+
+            @media (max-width: 1294px) and (min-width: 867px) {
+                flex-basis: 45%;
+                margin-right: 8px;
+            }
+
+            @media (max-width: 968px) {
+                flex-basis: 100%;
+                margin-right: 0px;
+                margin-bottom: 24px;
+            }
 
             &:nth-child(1) {
                 background: linear-gradient(90deg, #b1e5f9, #f4d2fe);
@@ -150,6 +169,16 @@
                     justify-content: space-between;
 
                     list-style-type: none;
+
+                    @media (max-width: 434px) {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
+
+                        padding-left: 24px;
+                        padding-right: 24px;
+                    }
 
                     li {
                         font-size: 0.8em;

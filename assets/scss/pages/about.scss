@@ -6,6 +6,12 @@
     padding: 100px;
     padding-bottom: 24px;
 
+    overflow-x: hidden;
+
+    @media (max-width: 767px) {
+        padding: 24px;
+    }
+
     &-skills {
         min-height: 150px;
 
@@ -15,6 +21,11 @@
         position: relative;
 
         margin-bottom: 92px;
+
+        @media (max-width: 767px) {
+            min-height: 100px;
+            margin-bottom: 50px;
+        }
 
         &-top,
         &-bottom {
@@ -32,18 +43,32 @@
 
                 margin-left: 50px;
                 margin-right: 50px;
+
+                @media (max-width: 767px) {
+                    font-size: 24px;
+
+                    margin-left: 8px;
+                    margin-right: 8px;
+                }
             }
         }
 
         &-top {
             top: 0;
             left: 400px;
+
+            @media (max-width: 767px) {
+                left: 100px;
+            }
         }
 
         &-bottom {
             bottom: 0;
             left: -400px;
-            ;
+
+            @media (max-width: 767px) {
+                left: -100px;
+            }
         }
     }
 }
