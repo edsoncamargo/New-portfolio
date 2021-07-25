@@ -444,6 +444,13 @@
     .works-container-cards-item {
       padding: 24px;
       margin-right: 24px; }
+      @media (max-width: 1288px) {
+        .works-container-cards-item {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 0px; } }
       .works-container-cards-item:nth-child(1) {
         background: #fff; }
       .works-container-cards-item:nth-child(2) {
