@@ -86,10 +86,11 @@ body {
 .cursor {
   width: 80px;
   height: 80px;
+
   border: 2px solid white;
   border-radius: 50px;
-  position: absolute;
 
+  position: absolute;
   z-index: 2;
 
   pointer-events: none;
@@ -122,13 +123,25 @@ body {
     top: -42px;
     left: -42px;
 
-    animation: cursor-animation-two .5s infinite alternate
+    animation: cursor-animation-two .5s infinite alternate;
   }
+}
 
-  &.expand {
-    animation: cursor-animation-three .5s forwards;
-    border: 8px solid #2b2994;
-  }
+.cursor-click {
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid white;
+  border-radius: 50px;
+
+  position: absolute;
+  z-index: 2;
+
+  pointer-events: none;
+
+  display: none;
+
+  animation: cursor-animation-three .5s infinite alternate;
 }
 
 @keyframes cursor-animation {
@@ -153,14 +166,17 @@ body {
 
 @keyframes cursor-animation-three {
   0% {
+    border-radius: 50px;
     transform: scale(1);
   }
 
   50% {
+    border-radius: 10px;
     transform: scale(3);
   }
 
   100% {
+    border-radius: 50px;
     transform: scale(1);
     opacity: 0;
   }

@@ -4,7 +4,10 @@
   top: 0;
   left: 0;
   padding: 24px;
-  z-index: 300; }
+  z-index: 300;
+  transform: translateY(-100vh);
+  opacity: 0;
+  transition: all 0.3s ease-in-out; }
   .navbar-brand {
     width: 100%;
     height: 60px; }
@@ -16,6 +19,9 @@
       background-image: url("/assets/images/png/Logo HNT3dev (white).png");
       background-repeat: no-repeat;
       background-position: center; }
+  .navbar.header-opened {
+    transform: translateY(0vh);
+    opacity: 1; }
 
 .home {
   display: flex;
@@ -348,7 +354,7 @@
       padding: 24px;
       margin-right: 24px;
       margin-bottom: 50px;
-      transition: all 0.2s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
       @media (max-width: 1333px) and (min-width: 1295px) {
         .projects-container .projects-container-cards .projects-container-card {
           flex-basis: 45%; } }
@@ -378,7 +384,7 @@
         left: -24px;
         bottom: -24px;
         border: 2px solid transparent;
-        transition: all 0.2s ease-in-out; }
+        transition: all 0.3s ease-in-out; }
       .projects-container .projects-container-cards .projects-container-card:hover {
         color: #fff;
         background: transparent;
@@ -407,7 +413,7 @@
           flex-direction: row;
           justify-content: flex-end;
           margin-right: 8px;
-          cursor: pointer; }
+          cursor: none; }
           .projects-container .projects-container-cards .projects-container-card-links a.mr-none {
             margin-right: 0px; }
           .projects-container .projects-container-cards .projects-container-card-links a .icon {
@@ -554,10 +560,18 @@ body {
     opacity: .5;
     top: -42px;
     left: -42px;
-    animation: cursor-animation-two 0.5s infinite alternate; }
-  .cursor.expand {
-    animation: cursor-animation-three .5s forwards;
-    border: 8px solid #2b2994; }
+    animation: cursor-animation-two .5s infinite alternate; }
+
+.cursor-click {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  display: none;
+  animation: cursor-animation-three .5s infinite alternate; }
 
 @keyframes cursor-animation {
   from {
@@ -571,10 +585,13 @@ body {
     transform: scale(0.4); } }
 @keyframes cursor-animation-three {
   0% {
+    border-radius: 50px;
     transform: scale(1); }
   50% {
+    border-radius: 10px;
     transform: scale(3); }
   100% {
+    border-radius: 50px;
     transform: scale(1);
     opacity: 0; } }
 

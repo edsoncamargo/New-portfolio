@@ -8,6 +8,11 @@
 
     z-index: 300;
 
+    transform: translateY(-100vh);
+    opacity: 0;
+
+    transition: all 0.3s ease-in-out;
+
     &-brand {
         width: 100%;
         height: 60px;
@@ -23,5 +28,10 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+    }
+
+    &.header-opened {
+        transform: translateY(0vh);
+        opacity: 1;
     }
 }

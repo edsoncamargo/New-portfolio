@@ -1,9 +1,8 @@
 function openHomeDoors() {
-  cursor.setAttribute('style', 'top: auto; left: auto; opacity: 0;');
+  cursor.setAttribute('style', 'top: auto; left: auto; display: none;');
+  cursor.classList.add('none-cursor');
 
   setTimeout(function () {
-    cursor.setAttribute('style', 'top: auto; left: auto; display: none;');
-
     document.querySelector(".left").classList.add("open");
     document.querySelector(".right").classList.add("open");
   }, 100);
@@ -27,6 +26,11 @@ function openHomeDoors() {
         document.getElementById("projects").classList.remove("d-none");
         document.getElementById("works").classList.remove("d-none");
 
+        setTimeout(() => {
+          document.getElementById("header").classList.add('header-opened');
+        }, 200);
+
+        initCustomCursorClickHandler();
         initParallaxEffect();
         initMouseParallaxEffect();
         initSkillsEffect();

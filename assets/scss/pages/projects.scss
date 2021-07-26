@@ -36,7 +36,7 @@
             margin-right: 24px;
             margin-bottom: 50px;
 
-            transition: all 0.2s ease-in-out;
+            transition: all 0.3s ease-in-out;
 
             @media (max-width: 1333px) and (min-width: 1295px) {
                 flex-basis: 45%;
@@ -82,7 +82,7 @@
 
                 border: 2px solid transparent;
 
-                transition: all 0.2s ease-in-out;
+                transition: all 0.3s ease-in-out;
             }
 
             &:hover {
@@ -130,7 +130,7 @@
 
                     margin-right: 8px;
 
-                    cursor: pointer;
+                    cursor: none;
 
                     &.mr-none {
                         margin-right: 0px;
