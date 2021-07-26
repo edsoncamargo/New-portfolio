@@ -22,6 +22,7 @@ function openHomeDoors() {
         document.getElementById("hello").classList.remove("open");
 
         document.getElementById("main").classList.remove("d-none");
+        document.getElementById("header").classList.remove("d-none");
         document.getElementById("about").classList.remove("d-none");
         document.getElementById("projects").classList.remove("d-none");
         document.getElementById("works").classList.remove("d-none");
@@ -39,6 +40,8 @@ function openHomeDoors() {
 }
 
 function initParallaxEffect() {
+  const header = document.getElementById("header");
+
   const stars = document.getElementById('stars');
   const moon = document.getElementById('moon');
 
@@ -56,6 +59,8 @@ function initParallaxEffect() {
   window.addEventListener('scroll', () => {
     let value = window.scrollY;
     stars.style.left = value * 0.20 + 'px';
+
+    header.style.transform = `translateY(${value * -0.2}px)`;
 
     moon.style.transform = `translateY(${value * 1.05}px)`;
 
