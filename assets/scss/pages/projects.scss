@@ -87,12 +87,40 @@
                 transition: all 0.3s ease-in-out;
             }
 
+            &:after {
+                content: "";
+
+                width: 0%;
+                height: 0%;
+
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+
+                opacity: 0;
+                border: 4px solid transparent;
+
+                transition: opacity 0.5s ease-in-out;
+            }
+
             &:hover {
                 color: #fff;
 
                 background: transparent;
-                border: 4px solid #fff;
 
+                &:after {
+                    content: "";
+
+                    width: calc(100% - 4px);
+                    height: calc(100% - 4px);
+
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+
+                    border: 4px solid #fff;
+                    opacity: 1;
+                }
 
                 &:before {
                     content: "";
