@@ -5,7 +5,12 @@ function initSkillsEffect() {
     window.addEventListener('scroll', () => {
         let value = window.scrollY;
 
-        aboutTop.style.transform = `translateX(${value * -0.80}px)`;
-        aboutBottom.style.transform = `translateX(${value * 0.80}px)`;
+        if (window.screen.width > 767) {
+            aboutTop.style.transform = `translateX(${value * -0.80}px)`;
+            aboutBottom.style.transform = `translateX(${value * 0.80}px)`;
+        } else {
+            aboutTop.style.transform = `translateX(${value * -0.20}px)`;
+            aboutBottom.style.transform = `translateX(${value * 0.20}px)`;
+        }
     })
 };

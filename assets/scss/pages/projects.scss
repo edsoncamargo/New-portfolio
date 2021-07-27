@@ -36,6 +36,8 @@
             margin-right: 24px;
             margin-bottom: 50px;
 
+            border-radius: solid 4px;
+
             transition: all 0.3s ease-in-out;
 
             @media (max-width: 1333px) and (min-width: 1295px) {
@@ -80,7 +82,7 @@
                 left: -24px;
                 bottom: -24px;
 
-                border: 2px solid transparent;
+                border: 4px solid transparent;
 
                 transition: all 0.3s ease-in-out;
             }
@@ -89,7 +91,7 @@
                 color: #fff;
 
                 background: transparent;
-                border: 2px solid #fff;
+                border: 4px solid #fff;
 
 
                 &:before {
@@ -99,10 +101,10 @@
                     height: 100%;
 
                     position: absolute;
-                    left: -12px;
-                    bottom: -12px;
+                    left: -24px;
+                    bottom: -24px;
 
-                    border: 2px solid #fff;
+                    border: 4px solid #fff;
                 }
 
                 .icon {

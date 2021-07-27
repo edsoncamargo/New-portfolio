@@ -11,7 +11,7 @@
     transform: translateY(-100vh);
     opacity: 0;
 
-    transition: all 0.3s ease-in-out;
+    transition: opacity 3s ease-in-out;
 
     &-brand {
         width: 100%;
