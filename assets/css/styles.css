@@ -55,11 +55,11 @@
       animation: 1.2s ease-in-out circle; }
 @keyframes circle {
   0% {
-    background-color: #494cab;
+    background-color: #b1e5f9;
     width: 0vw;
     height: 0vh; }
   100% {
-    background-color: #000;
+    background-color: #494cab;
     width: 3000px;
     height: 3000px; } }
     .home .hello h1 {
@@ -67,7 +67,8 @@
       font-weight: 900;
       font-size: 12em;
       line-height: 0.8em;
-      color: #494cab;
+      color: #fff;
+      -webkit-text-stroke: 5px #000;
       pointer-events: none;
       position: relative; }
       @media (max-width: 767px) {
@@ -87,7 +88,7 @@
         background-repeat: no-repeat; }
         @media (min-width: 768px) {
           .home .hello h1::before {
-            filter: invert(35%) sepia(49%) saturate(885%) hue-rotate(200deg) brightness(83%) contrast(93%);
+            filter: invert(78%) sepia(7%) saturate(10%) hue-rotate(44deg) brightness(104%) contrast(94%);
             animation: 0.6s ease-in-out infinite alternate arrow-right; } }
         @media (max-width: 767px) {
           .home .hello h1::before {
@@ -106,7 +107,7 @@
         background-repeat: no-repeat; }
         @media (min-width: 768px) {
           .home .hello h1::after {
-            filter: invert(35%) sepia(49%) saturate(885%) hue-rotate(200deg) brightness(83%) contrast(93%);
+            filter: invert(78%) sepia(7%) saturate(10%) hue-rotate(44deg) brightness(104%) contrast(94%);
             animation: 0.6s ease-in-out infinite alternate arrow-left; } }
         @media (max-width: 767px) {
           .home .hello h1::after {
@@ -116,6 +117,7 @@
             justify-content: center;
             font-size: 8px;
             color: #fff;
+            -webkit-text-stroke: 0px transparent;
             width: 50px;
             height: 50px;
             background-image: none;
@@ -562,7 +564,7 @@ body {
 .cursor {
   width: 80px;
   height: 80px;
-  border: 2px solid white;
+  border: 2px dashed #494cab;
   border-radius: 50px;
   position: absolute;
   z-index: 2;
@@ -572,20 +574,21 @@ body {
   display: none; }
   .cursor::after {
     content: 'CLICK!';
+    color: #2b2994;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     font-size: 1.4em;
-    color: #fff;
     width: 80px;
     height: 80px;
     position: absolute;
-    border: 40px solid gray;
+    border: 40px solid #2b2994;
     border-radius: 50%;
-    opacity: .5;
+    opacity: 1;
     top: -42px;
     left: -42px;
+    background: rgba(255, 255, 255, 0.8);
     animation: cursor-animation-two .5s infinite alternate; }
 
 .cursor-click {

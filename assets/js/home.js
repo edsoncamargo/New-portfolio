@@ -13,7 +13,7 @@ function openHomeDoors() {
 
     setTimeout(function () {
       setTimeout(function () {
-        document.querySelector("body").style.backgroundColor = "#000";
+        document.querySelector("body").style.background = "#2b2994";
 
         document.getElementById("home").classList.add("d-none");
         document.getElementById("hello").classList.remove("opening");
