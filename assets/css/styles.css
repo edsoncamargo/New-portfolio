@@ -335,6 +335,37 @@
       @media (max-width: 767px) {
         .about-container-skills-bottom {
           left: -100px; } }
+  .about-container-bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between; }
+    @media (max-width: 910px) {
+      .about-container-bottom {
+        flex-wrap: wrap;
+        justify-content: center; } }
+    .about-container-bottom-left {
+      width: 70%;
+      margin-right: 50px; }
+      @media (max-width: 910px) {
+        .about-container-bottom-left {
+          width: 100%;
+          margin-right: 0px; } }
+    .about-container-bottom-right {
+      display: flex;
+      justify-content: flex-end;
+      width: 30%; }
+      @media (max-width: 910px) {
+        .about-container-bottom-right {
+          width: 100%;
+          justify-content: center; } }
+      .about-container-bottom-right-image {
+        height: 300px;
+        width: 300px; }
+        .about-container-bottom-right-image img.me {
+          height: 300px;
+          width: 300px;
+          border-radius: 100%; }
 
 .projects-container {
   color: #fff;

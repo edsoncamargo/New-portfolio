@@ -81,4 +81,50 @@
             }
         }
     }
+
+    &-bottom {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media (max-width: 910px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &-left {
+            width: 70%;
+            margin-right: 50px;
+
+            @media (max-width: 910px) {
+                width: 100%;
+                margin-right: 0px;
+            }
+        }
+
+        &-right {
+            display: flex;
+            justify-content: flex-end;
+
+            width: 30%;
+
+            @media (max-width: 910px) {
+                width: 100%;
+                justify-content: center;
+            }
+
+            &-image {
+                height: 300px;
+                width: 300px;
+
+                img.me {
+                    height: 300px;
+                    width: 300px;
+
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
 }
