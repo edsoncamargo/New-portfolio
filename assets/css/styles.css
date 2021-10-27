@@ -55,11 +55,11 @@
       animation: 1.2s ease-in-out circle; }
 @keyframes circle {
   0% {
-    background-color: #b1e5f9;
+    background: linear-gradient(#2b2994, #494cab);
     width: 0vw;
     height: 0vh; }
   100% {
-    background-color: #494cab;
+    background: linear-gradient(#2b2994, #494cab);
     width: 3000px;
     height: 3000px; } }
     .home .hello h1 {
@@ -379,7 +379,7 @@
   .projects-container .projects-container-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: center; }
     .projects-container .projects-container-cards .projects-container-card {
       height: 350px;
       min-height: 350px;
@@ -415,7 +415,9 @@
       .projects-container .projects-container-cards .projects-container-card:nth-child(3) {
         background: linear-gradient(180deg, #efa971, #e4cafe); }
       .projects-container .projects-container-cards .projects-container-card:nth-child(4) {
-        background: linear-gradient(180deg, #f3cbab, #feedca);
+        background: linear-gradient(180deg, #f3cbab, #feedca); }
+      .projects-container .projects-container-cards .projects-container-card:nth-child(5) {
+        background: linear-gradient(180deg, #5ce2d0, #494cab);
         margin-bottom: 0px; }
       .projects-container .projects-container-cards .projects-container-card:before {
         content: "";
@@ -471,6 +473,7 @@
           align-items: center;
           flex-direction: row;
           justify-content: flex-end;
+          z-index: 10;
           margin-right: 8px;
           cursor: none; }
           .projects-container .projects-container-cards .projects-container-card-links a.mr-none {
@@ -507,7 +510,8 @@
           .projects-container .projects-container-cards .projects-container-card-technologies ul li {
             font-size: 0.8em;
             letter-spacing: 3px;
-            margin-right: 10px; }
+            margin-right: 10px;
+            margin-left: 10px; }
 
 .works-container {
   color: #fff;
@@ -551,13 +555,15 @@ body {
   overflow-x: hidden; }
 
 .container {
-  opacity: 0;
-  transition: all 1s ease-out;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 2s ease-in-out; }
   .container.open {
+    transform: translateY(0px);
     opacity: 1; }
 
 .title-container {

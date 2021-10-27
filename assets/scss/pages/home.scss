@@ -50,13 +50,13 @@
 
       @keyframes circle {
         0% {
-          background-color: #b1e5f9;
+          background: linear-gradient(#2b2994, #494cab);
           width: 0vw;
           height: 0vh;
         }
 
         100% {
-          background-color: #494cab;
+          background: linear-gradient(#2b2994, #494cab);
           width: 3000px;
           height: 3000px;
         }

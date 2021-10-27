@@ -13,7 +13,7 @@
     .projects-container-cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
 
         .projects-container-card {
             height: 350px;
@@ -69,6 +69,10 @@
 
             &:nth-child(4) {
                 background: linear-gradient(180deg, #f3cbab, #feedca);
+            }
+
+            &:nth-child(5) {
+                background: linear-gradient(180deg, #5ce2d0, #494cab);
                 margin-bottom: 0px;
             }
 
@@ -158,6 +162,8 @@
                     flex-direction: row;
                     justify-content: flex-end;
 
+                    z-index: 10;
+
                     margin-right: 8px;
 
                     cursor: none;
@@ -216,6 +222,7 @@
                         letter-spacing: 3px;
 
                         margin-right: 10px;
+                        margin-left: 10px;
                     }
                 }
             }
