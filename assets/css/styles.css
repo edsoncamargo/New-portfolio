@@ -438,28 +438,29 @@
         opacity: 0;
         border: 4px solid transparent;
         transition: opacity 0.5s ease-in-out; }
-      .projects-container .projects-container-cards .projects-container-card:hover {
-        color: #fff;
-        background: transparent; }
-        .projects-container .projects-container-cards .projects-container-card:hover:after {
-          content: "";
-          width: calc(100% - 4px);
-          height: calc(100% - 4px);
-          position: absolute;
-          top: 0px;
-          left: 0px;
-          border: 4px solid #fff;
-          opacity: 1; }
-        .projects-container .projects-container-cards .projects-container-card:hover:before {
-          content: "";
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          left: -24px;
-          bottom: -24px;
-          border: 4px solid #fff; }
-        .projects-container .projects-container-cards .projects-container-card:hover .icon {
-          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%); }
+      @media (min-width: 768px) {
+        .projects-container .projects-container-cards .projects-container-card:hover {
+          color: #fff;
+          background: transparent; }
+          .projects-container .projects-container-cards .projects-container-card:hover:after {
+            content: "";
+            width: calc(100% - 4px);
+            height: calc(100% - 4px);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border: 4px solid #fff;
+            opacity: 1; }
+          .projects-container .projects-container-cards .projects-container-card:hover:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: -24px;
+            bottom: -24px;
+            border: 4px solid #fff; }
+          .projects-container .projects-container-cards .projects-container-card:hover .icon {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%); } }
       .projects-container .projects-container-cards .projects-container-card-links {
         display: flex;
         align-items: center;
