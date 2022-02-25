@@ -20,7 +20,6 @@ body {
 }
 
 .container {
-
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -98,13 +97,13 @@ body {
 
   pointer-events: none;
 
-  animation: cursor-animation .5s infinite alternate;
-  animation: opacity .1s ease-in-out;
+  animation: cursor-animation 0.5s infinite alternate;
+  animation: opacity 0.1s ease-in-out;
 
   display: none;
 
   &::after {
-    content: 'CLICK!';
+    content: "CLICK!";
 
     color: #2b2994;
 
@@ -129,7 +128,7 @@ body {
 
     background: rgba(255, 255, 255, 0.8);
 
-    animation: cursor-animation-two .5s infinite alternate;
+    animation: cursor-animation-two 0.5s infinite alternate;
   }
 }
 
@@ -147,7 +146,7 @@ body {
 
   display: none;
 
-  animation: cursor-animation-three .5s infinite alternate;
+  animation: cursor-animation-three 0.5s infinite alternate;
 }
 
 @keyframes cursor-animation {
@@ -156,7 +155,7 @@ body {
   }
 
   to {
-    transform: scale(.7);
+    transform: scale(0.7);
   }
 }
 
@@ -166,7 +165,7 @@ body {
   }
 
   to {
-    transform: scale(.4);
+    transform: scale(0.4);
   }
 }
 
