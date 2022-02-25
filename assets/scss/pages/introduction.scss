@@ -114,7 +114,7 @@
         font-weight: 100;
         letter-spacing: 8px;
 
-        animation: all 1.2s ease-out am;
+        animation: am 4s;
 
         @media (max-width: 767px) {
           margin-bottom: 16px;
@@ -136,7 +136,7 @@
         font-weight: 900;
         letter-spacing: 12px;
 
-        animation: all 1.2s ease-in-out name-effect;
+        animation: name-effect 4s;
 
         @media (max-width: 767px) {
           font-size: 14vw;
@@ -167,7 +167,7 @@
         letter-spacing: 8px;
         line-height: 25px;
 
-        animation: all 1.2s ease-out title;
+        animation: title 4s;
 
         @media (max-width: 767px) {
           margin-top: 16px;

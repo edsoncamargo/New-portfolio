@@ -235,7 +235,7 @@
         font-size: 1em;
         font-weight: 100;
         letter-spacing: 8px;
-        animation: all 1.2s ease-out am; }
+        animation: am 4s; }
         @media (max-width: 767px) {
           .container .introduction-container .introduction-container-text span.am {
             margin-bottom: 16px; } }
@@ -248,7 +248,7 @@
         font-size: 8vw;
         font-weight: 900;
         letter-spacing: 12px;
-        animation: all 1.2s ease-in-out name-effect; }
+        animation: name-effect 4s; }
         @media (max-width: 767px) {
           .container .introduction-container .introduction-container-text h1.name {
             font-size: 14vw; } }
@@ -268,7 +268,7 @@
         font-weight: 100;
         letter-spacing: 8px;
         line-height: 25px;
-        animation: all 1.2s ease-out title; }
+        animation: title 4s; }
         @media (max-width: 767px) {
           .container .introduction-container .introduction-container-text span.title {
             margin-top: 16px; } }
