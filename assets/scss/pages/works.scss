@@ -105,7 +105,17 @@
       }
 
       &:nth-child(3) {
-        background: linear-gradient(180deg, #b0ffcd, #5ce2d0);
+        background: linear-gradient(297deg, #ffffff, #fff0b3);
+
+        em {
+          width: 100%;
+          height: 184px;
+
+          background-size: contain;
+          background-image: url(../images/png/everis.png);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
       }
 
       &:nth-child(4) {
