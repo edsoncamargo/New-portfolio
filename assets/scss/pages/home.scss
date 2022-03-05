@@ -35,58 +35,62 @@
       }
     }
 
-    &.open.night {
-      &::before {
-        position: absolute;
-        content: "";
+    &.open {
+      &.night {
+        &::before {
+          position: absolute;
+          content: "";
 
-        opacity: 1;
-        z-index: 2;
+          opacity: 1;
+          z-index: 2;
 
-        border-radius: 50%;
+          border-radius: 50%;
 
-        animation: 1.2s ease-in-out circle;
-      }
-
-      @keyframes circle {
-        0% {
-          background: linear-gradient(#2b2994, #494cab);
-          width: 0vw;
-          height: 0vh;
+          animation: 1.2s ease-in-out circleN;
         }
 
-        100% {
-          background: linear-gradient(#2b2994, #494cab);
-          width: 3000px;
-          height: 3000px;
+        @keyframes circleN {
+          0% {
+            background: linear-gradient(#2b2994, #494cab);
+            width: 0vw;
+            height: 0vh;
+          }
+
+          100% {
+            background: linear-gradient(#2b2994, #494cab);
+            width: 3000px;
+            height: 3000px;
+          }
         }
       }
     }
 
-    &.open.day {
-      &::before {
-        position: absolute;
-        content: "";
+    &.open {
+      &.day {
+        &::before {
+          position: absolute;
+          content: "";
 
-        opacity: 1;
-        z-index: 2;
+          opacity: 1;
+          z-index: 2;
 
-        border-radius: 50%;
+          border-radius: 50%;
 
-        animation: 1.2s ease-in-out circle;
-      }
-
-      @keyframes circle {
-        0% {
-          background: linear-gradient(#9fd1ff, #a9e6f8);
-          width: 0vw;
-          height: 0vh;
+          animation: 1.2s ease-in-out circleD;
         }
 
-        100% {
-          background: linear-gradient(#9fd1ff, #a9e6f8);
-          width: 3000px;
-          height: 3000px;
+        @keyframes circleD {
+          0% {
+            background: linear-gradient(#9fd1ff, #a9e6f8);
+            width: 0vw;
+            height: 0vh;
+          }
+
+          100% {
+            background: linear-gradient(#9fd1ff, #a9e6f8);
+            width: 3000px;
+            height: 3000px;
+          }
         }
       }
     }

@@ -44,6 +44,7 @@ function initCustomCursorClickHandler() {
         e.clientX < clickableX + clickable.clientWidth
       ) {
         document.querySelector("body").setAttribute("style", "cursor: none;");
+
         cursorClick.setAttribute(
           "style",
           "top: " +
@@ -52,20 +53,32 @@ function initCustomCursorClickHandler() {
             (e.pageX - 10) +
             "px; display: inline-block;"
         );
+
         isClickable = true;
       }
     });
 
     if (isClickable === false) {
-      if (isDayTime) {
-        document
-          .querySelector("body")
-          .setAttribute("style", "cursor: auto; background-color: #9fd1ff;");
+      if (isDayTime()) {
+        let entrar = true;
+        if (entrar) {
+          document
+            .querySelector("body")
+            .setAttribute("style", "cursor: auto; background-color: #9fd1ff;");
+        }
+
+        setTimeout(() => {
+          entrar = false;
+          document
+            .querySelector("body")
+            .setAttribute("style", "cursor: auto; background-color: #494cab;");
+        }, 2000);
       } else {
         document
           .querySelector("body")
           .setAttribute("style", "cursor: auto; background-color: #494cab;");
       }
+
       cursorClick.setAttribute(
         "style",
         "top: auto; left: auto; display: none;"

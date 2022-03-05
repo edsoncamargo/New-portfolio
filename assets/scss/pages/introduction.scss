@@ -16,26 +16,11 @@
     position: absolute;
     bottom: 0;
 
-    height: 115px;
+    height: 150px;
     width: 100%;
 
     background: linear-gradient(to top, #494cab, transparent);
     z-index: 200;
-
-    animation: changeColor 5s ease-in-out;
-    transition: all 0.6s ease-in-out;
-
-    @keyframes changeColor {
-      0% {
-        opacity: 0;
-        background: linear-gradient(to top, #9fd1ff, transparent);
-      }
-
-      100% {
-        opacity: 1;
-        background: linear-gradient(to top, #494cab, transparent);
-      }
-    }
   }
 
   .parallax-container {
