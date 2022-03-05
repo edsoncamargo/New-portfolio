@@ -21,7 +21,6 @@ function changeThemeByHour() {
 
   if (isDayTime()) {
     stars.style.opacity = "0";
-    moon.style.top = "0px";
 
     elements.forEach((element) => {
       const index = element.src.indexOf("/assets/images/home/night/");
