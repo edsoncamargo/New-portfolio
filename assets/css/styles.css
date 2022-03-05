@@ -46,7 +46,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       transition: all 0.5s ease-in-out; }
-    .home .hello.open::before {
+    .home .hello.open.night::before {
       position: absolute;
       content: "";
       opacity: 1;
@@ -60,6 +60,22 @@
     height: 0vh; }
   100% {
     background: linear-gradient(#2b2994, #494cab);
+    width: 3000px;
+    height: 3000px; } }
+    .home .hello.open.day::before {
+      position: absolute;
+      content: "";
+      opacity: 1;
+      z-index: 2;
+      border-radius: 50%;
+      animation: 1.2s ease-in-out circle; }
+@keyframes circle {
+  0% {
+    background: linear-gradient(#9fd1ff, #a9e6f8);
+    width: 0vw;
+    height: 0vh; }
+  100% {
+    background: linear-gradient(#9fd1ff, #a9e6f8);
     width: 3000px;
     height: 3000px; } }
     .home .hello h1 {
@@ -163,16 +179,28 @@
 
 .container {
   position: relative;
-  background: linear-gradient(#2b2994, #494cab);
   overflow: hidden; }
+  .container.night {
+    background: linear-gradient(#2b2994, #494cab); }
+  .container.day {
+    background: linear-gradient(#9fd1ff, #a9e6f8); }
   .container::before {
     content: "";
     position: absolute;
     bottom: 0;
-    height: 200px;
+    height: 115px;
     width: 100%;
     background: linear-gradient(to top, #494cab, transparent);
-    z-index: 200; }
+    z-index: 200;
+    animation: changeColor 5s ease-in-out;
+    transition: all 0.6s ease-in-out; }
+@keyframes changeColor {
+  0% {
+    opacity: 0;
+    background: linear-gradient(to top, #9fd1ff, transparent); }
+  100% {
+    opacity: 1;
+    background: linear-gradient(to top, #494cab, transparent); } }
   .container .parallax-container {
     width: 100%;
     height: 100%;

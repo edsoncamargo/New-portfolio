@@ -1,8 +1,14 @@
 .container {
   position: relative;
-  background: linear-gradient(#2b2994, #494cab);
-
   overflow: hidden;
+
+  &.night {
+    background: linear-gradient(#2b2994, #494cab);
+  }
+
+  &.day {
+    background: linear-gradient(#9fd1ff, #a9e6f8);
+  }
 
   &::before {
     content: "";
@@ -10,11 +16,26 @@
     position: absolute;
     bottom: 0;
 
-    height: 200px;
+    height: 115px;
     width: 100%;
 
     background: linear-gradient(to top, #494cab, transparent);
     z-index: 200;
+
+    animation: changeColor 5s ease-in-out;
+    transition: all 0.6s ease-in-out;
+
+    @keyframes changeColor {
+      0% {
+        opacity: 0;
+        background: linear-gradient(to top, #9fd1ff, transparent);
+      }
+
+      100% {
+        opacity: 1;
+        background: linear-gradient(to top, #494cab, transparent);
+      }
+    }
   }
 
   .parallax-container {

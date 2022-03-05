@@ -2,6 +2,12 @@ function openHomeDoors() {
   cursor.setAttribute("style", "top: auto; left: auto; display: none;");
   cursor.classList.add("none-cursor");
 
+  if (isDayTime) {
+    document.querySelector(".container").classList.add("day");
+  } else {
+    document.querySelector(".container").classList.add("night");
+  }
+
   setTimeout(function () {
     document.querySelector(".left").classList.add("open");
     document.querySelector(".right").classList.add("open");
@@ -10,9 +16,19 @@ function openHomeDoors() {
   setTimeout(function () {
     document.getElementById("hello").classList.add("open");
 
+    if (isDayTime) {
+      document.getElementById("hello").classList.add("day");
+    } else {
+      document.getElementById("hello").classList.add("night");
+    }
+
     setTimeout(function () {
       setTimeout(function () {
-        document.querySelector("body").style.background = "#2b2994";
+        if (isDayTime) {
+          document.querySelector("body").style.background = "#9fd1ff";
+        } else {
+          document.querySelector("body").style.background = "#2b2994";
+        }
 
         document.getElementById("home").classList.add("d-none");
         document.getElementById("hello").classList.remove("opening");
@@ -29,6 +45,7 @@ function openHomeDoors() {
           document.getElementById("header").classList.add("header-opened");
         }, 200);
 
+        changeThemeByHour();
         initCustomCursorClickHandler();
         initParallaxEffect();
         initMouseParallaxEffect();

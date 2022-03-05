@@ -57,9 +57,15 @@ function initCustomCursorClickHandler() {
     });
 
     if (isClickable === false) {
-      document
-        .querySelector("body")
-        .setAttribute("style", "cursor: auto; background-color: #494cab;");
+      if (isDayTime) {
+        document
+          .querySelector("body")
+          .setAttribute("style", "cursor: auto; background-color: #9fd1ff;");
+      } else {
+        document
+          .querySelector("body")
+          .setAttribute("style", "cursor: auto; background-color: #494cab;");
+      }
       cursorClick.setAttribute(
         "style",
         "top: auto; left: auto; display: none;"
