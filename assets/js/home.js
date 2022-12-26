@@ -1,58 +1,58 @@
 function openHomeDoors() {
-  cursor.setAttribute("style", "top: auto; left: auto; display: none;");
-  cursor.classList.add("none-cursor");
+  cursor.setAttribute('style', 'top: auto; left: auto; display: none;');
+  cursor.classList.add('none-cursor');
 
   if (isDayTime()) {
-    document.querySelector(".container").classList.add("day");
+    document.querySelector('.container').classList.add('day');
   } else {
-    document.querySelector(".container").classList.add("night");
+    document.querySelector('.container').classList.add('night');
   }
 
   setTimeout(function () {
-    document.querySelector(".left").classList.add("open");
-    document.querySelector(".right").classList.add("open");
+    document.querySelector('.left').classList.add('open');
+    document.querySelector('.right').classList.add('open');
   }, 100);
 
   setTimeout(function () {
-    document.getElementById("hello").classList.add("open");
+    document.getElementById('hello').classList.add('open');
 
     if (isDayTime()) {
-      document.getElementById("hello").classList.add("day");
+      document.getElementById('hello').classList.add('day');
     } else {
-      document.getElementById("hello").classList.add("night");
+      document.getElementById('hello').classList.add('night');
     }
 
     setTimeout(function () {
       setTimeout(function () {
         if (isDayTime()) {
-          document.querySelector("body").style.background = "#9fd1ff";
+          document.querySelector('body').style.background = '#9fd1ff';
 
           setTimeout(() => {
             entrar = false;
             document
-              .querySelector("body")
+              .querySelector('body')
               .setAttribute(
-                "style",
-                "cursor: auto; background-color: #494cab;"
+                'style',
+                'cursor: auto; background-color: #494cab;'
               );
           }, 2000);
         } else {
-          document.querySelector("body").style.background = "#2b2994";
+          document.querySelector('body').style.background = '#2b2994';
         }
 
-        document.getElementById("home").classList.add("d-none");
-        document.getElementById("hello").classList.remove("opening");
+        document.getElementById('home').classList.add('d-none');
+        document.getElementById('hello').classList.remove('opening');
 
-        document.getElementById("hello").classList.remove("open");
+        document.getElementById('hello').classList.remove('open');
 
-        document.getElementById("main").classList.remove("d-none");
-        document.getElementById("header").classList.remove("d-none");
-        document.getElementById("about").classList.remove("d-none");
-        document.getElementById("projects").classList.remove("d-none");
-        document.getElementById("works").classList.remove("d-none");
+        document.getElementById('main').classList.remove('d-none');
+        document.getElementById('header').classList.remove('d-none');
+        document.getElementById('about').classList.remove('d-none');
+        document.getElementById('projects').classList.remove('d-none');
+        document.getElementById('works').classList.remove('d-none');
 
         setTimeout(() => {
-          document.getElementById("header").classList.add("header-opened");
+          document.getElementById('header').classList.add('header-opened');
         }, 200);
 
         changeThemeByHour();
@@ -62,7 +62,7 @@ function openHomeDoors() {
         initSkillsEffect();
 
         setTimeout(function () {
-          document.getElementById("main").classList.add("open");
+          document.getElementById('main').classList.add('open');
         }, 200);
       }, 600);
     }, 600);
@@ -70,25 +70,25 @@ function openHomeDoors() {
 }
 
 function initParallaxEffect() {
-  const navbarBrand = document.getElementById("navbarBrand");
+  const navbarBrand = document.getElementById('navbarBrand');
 
-  const stars = document.getElementById("stars");
-  const moon = document.getElementById("moon");
+  const stars = document.getElementById('stars');
+  const moon = document.getElementById('moon');
 
-  const name = document.getElementById("name");
-  const am = document.getElementById("am");
-  const title = document.getElementById("title");
+  const name = document.getElementById('name');
+  const am = document.getElementById('am');
+  const title = document.getElementById('title');
 
-  const montainsLeft = document.getElementById("montainsLeft");
-  const stoneLeft1 = document.getElementById("stoneLeft1");
-  const stoneLeft2 = document.getElementById("stoneLeft2");
-  const montainsRight = document.getElementById("montainsRight");
-  const stoneRight1 = document.getElementById("stoneRight1");
-  const stoneRight2 = document.getElementById("stoneRight2");
+  const montainsLeft = document.getElementById('montainsLeft');
+  const stoneLeft1 = document.getElementById('stoneLeft1');
+  const stoneLeft2 = document.getElementById('stoneLeft2');
+  const montainsRight = document.getElementById('montainsRight');
+  const stoneRight1 = document.getElementById('stoneRight1');
+  const stoneRight2 = document.getElementById('stoneRight2');
 
-  window.addEventListener("scroll", () => {
+  window.addEventListener('scroll', () => {
     let value = window.scrollY;
-    stars.style.left = value * 0.2 + "px";
+    stars.style.left = value * 0.2 + 'px';
 
     navbarBrand.style.transform = `translateY(${value * -0.2}px)`;
 
@@ -127,32 +127,32 @@ function initMouseParallaxEffect() {
     userHasScrolled = true;
   };
 
-  document.addEventListener("mousemove", (e) => {
-    const parallaxContainer = document.querySelector(".parallax-container");
-    const parallaxContainerX = parallaxContainer.getBoundingClientRect().x;
-    const parallaxContainerY = parallaxContainer.getBoundingClientRect().y;
-    const parallaxContainerW = parallaxContainer.getBoundingClientRect().width;
-    const parallaxContainerH = parallaxContainer.getBoundingClientRect().height;
+  // document.addEventListener("mousemove", (e) => {
+  //   const parallaxContainer = document.querySelector(".parallax-container");
+  //   const parallaxContainerX = parallaxContainer.getBoundingClientRect().x;
+  //   const parallaxContainerY = parallaxContainer.getBoundingClientRect().y;
+  //   const parallaxContainerW = parallaxContainer.getBoundingClientRect().width;
+  //   const parallaxContainerH = parallaxContainer.getBoundingClientRect().height;
 
-    if (
-      e.pageX > parallaxContainerX &&
-      e.pageX < parallaxContainerX + parallaxContainerW &&
-      e.pageY > parallaxContainerY &&
-      e.pageY < parallaxContainerY + parallaxContainerH
-    ) {
-      if (userHasScrolled === false) {
-        document.querySelectorAll(".layer").forEach((element) => {
-          const speed = element.getAttribute("data-speed");
+  //   if (
+  //     e.pageX > parallaxContainerX &&
+  //     e.pageX < parallaxContainerX + parallaxContainerW &&
+  //     e.pageY > parallaxContainerY &&
+  //     e.pageY < parallaxContainerY + parallaxContainerH
+  //   ) {
+  //     if (userHasScrolled === false) {
+  //       document.querySelectorAll(".layer").forEach((element) => {
+  //         const speed = element.getAttribute("data-speed");
 
-          const x = (screen.width - e.pageX * speed) / 100;
-          const y = (screen.height - e.pageY * speed) / 100;
+  //         const x = (screen.width - e.pageX * speed) / 100;
+  //         const y = (screen.height - e.pageY * speed) / 100;
 
-          element.style.transform = `translate(${x}px, ${y}px)`;
-          element.style.transform = `translate(${x}px, ${y}px)`;
-        });
-      } else {
-        userHasScrolled = false;
-      }
-    }
-  });
+  //         element.style.transform = `translate(${x}px, ${y}px)`;
+  //         element.style.transform = `translate(${x}px, ${y}px)`;
+  //       });
+  //     } else {
+  //       userHasScrolled = false;
+  //     }
+  //   }
+  // });
 }
