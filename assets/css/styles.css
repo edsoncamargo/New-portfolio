@@ -858,31 +858,31 @@ footer p bold {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 200;
-  src: local(""), url("../fonts/Roboto/Roboto-Thin") format("ttf"), url("../fonts/Roboto/Roboto-Thin") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Roboto"), url("../fonts/Roboto/Roboto-Thin.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Thin.ttf") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: local(""), url("../fonts/Roboto/Roboto-Light") format("ttf"), url("../fonts/Roboto/Roboto-Light") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Roboto"), url("../fonts/Roboto/Roboto-Light.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Light.ttf") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/Roboto/Roboto-Medium") format("ttf"), url("../fonts/Roboto/Roboto-Medium") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Roboto"), url("../fonts/Roboto/Roboto-Medium.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Medium.ttf") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 800;
-  src: local(""), url("../fonts/Roboto/Roboto-Bold") format("ttf"), url("../fonts/Roboto/Roboto-Bold") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Roboto"), url("../fonts/Roboto/Roboto-Bold.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Bold.ttf") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: local(""), url("../fonts/Roboto/Roboto-Black") format("ttf"), url("../fonts/Roboto/Roboto-Black") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Roboto"), url("../fonts/Roboto/Roboto-Black.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Black.ttf") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 * {
   margin: 0;
