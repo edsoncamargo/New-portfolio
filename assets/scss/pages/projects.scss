@@ -1,6 +1,6 @@
 .projects-container {
   color: #fff;
-  background-color: #494cab;
+  background-color: #101823;
 
   position: relative;
   padding: 50px 100px;
@@ -13,7 +13,7 @@
   .projects-container-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 
     .projects-container-card {
       height: 350px;
@@ -31,6 +31,7 @@
       color: #000;
       border-radius: 8px;
 
+      background-color: transparent;
       background-repeat: no-repeat;
 
       padding: 24px;
@@ -74,11 +75,22 @@
 
       &:nth-child(5) {
         background: linear-gradient(180deg, #5ce2d0, #494cab);
+      }
+
+      &:nth-child(6) {
+        background: linear-gradient(180deg, #7be25c, #9d9d9d);
+      }
+
+      &:nth-child(7) {
+        background: linear-gradient(180deg, #c322be, #e1999e);
+      }
+
+      &:last-child {
         margin-bottom: 0px;
       }
 
       &:before {
-        content: "";
+        content: '';
 
         width: 0%;
         height: 0%;
@@ -94,7 +106,7 @@
       }
 
       &:after {
-        content: "";
+        content: '';
 
         width: 0%;
         height: 0%;
@@ -113,11 +125,10 @@
       @media (min-width: 768px) {
         &:hover {
           color: #fff;
-
-          background: transparent;
+          background: linear-gradient(180deg, transparent, transparent);
 
           &:after {
-            content: "";
+            content: '';
 
             width: calc(100% - 4px);
             height: calc(100% - 4px);
@@ -131,7 +142,7 @@
           }
 
           &:before {
-            content: "";
+            content: '';
 
             width: 100%;
             height: 100%;

@@ -25,19 +25,9 @@ function openHomeDoors() {
     setTimeout(function () {
       setTimeout(function () {
         if (isDayTime()) {
-          document.querySelector('body').style.background = '#9fd1ff';
-
-          setTimeout(() => {
-            entrar = false;
-            document
-              .querySelector('body')
-              .setAttribute(
-                'style',
-                'cursor: auto; background-color: #494cab;'
-              );
-          }, 2000);
+          document.querySelector('body').classList.add('day');
         } else {
-          document.querySelector('body').style.background = '#2b2994';
+          document.querySelector('body').classList.add('night');
         }
 
         document.getElementById('home').classList.add('d-none');
@@ -50,6 +40,7 @@ function openHomeDoors() {
         document.getElementById('about').classList.remove('d-none');
         document.getElementById('projects').classList.remove('d-none');
         document.getElementById('works').classList.remove('d-none');
+        document.getElementById('footer').classList.remove('d-none');
 
         setTimeout(() => {
           document.getElementById('header').classList.add('header-opened');

@@ -1,0 +1,16 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #743ad5, #d53a9d);
+
+  p {
+    color: #fff;
+    font-size: 16px;
+    padding: 24px;
+
+    bold {
+      font-weight: bold;
+    }
+  }
+}

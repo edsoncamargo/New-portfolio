@@ -11,15 +11,15 @@
   }
 
   &::before {
-    content: "";
+    content: '';
 
     position: absolute;
     bottom: 0;
 
-    height: 150px;
+    height: 200px;
     width: 100%;
 
-    background: linear-gradient(to top, #494cab, transparent);
+    background: linear-gradient(to top, #101823, transparent);
     z-index: 200;
   }
 
