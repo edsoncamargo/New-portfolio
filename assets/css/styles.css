@@ -387,6 +387,7 @@
   position: relative;
   padding: 100px;
   padding-bottom: 0px;
+  position: relative;
   overflow-x: hidden;
 }
 @media (max-width: 767px) {
@@ -515,6 +516,71 @@
   .about-container-bottom-right-image .about-container-bottom-right-image__me {
     width: 100%;
     background-size: cover;
+  }
+}
+.about-container__connect {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1600px) {
+  .about-container__connect {
+    margin-top: -20px;
+  }
+}
+@media (min-width: 1400px) {
+  .about-container__connect {
+    margin-top: 0px;
+  }
+}
+.about-container__connect a {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: inherit;
+  padding: 1em 2em;
+  border: 2px solid rgb(114, 117, 183);
+  border-radius: 1em;
+  background: rgb(122, 125, 222);
+  transform-style: preserve-3d;
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+@media (max-width: 768px) {
+  .about-container__connect a {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+}
+.about-container__connect a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(61, 64, 131);
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px rgb(35, 37, 93), 0 0.75em 0 0 rgb(35, 37, 93);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+@media (hover: hover) {
+  .about-container__connect a:hover {
+    transform: translate(0em, 0.75em);
+  }
+  .about-container__connect a:hover::before {
+    transform: translate3d(0, 0, -1em);
+    box-shadow: 0 0 0 2px rgb(35, 37, 93), 0 0.25em 0 0 rgb(73, 76, 171);
   }
 }
 
