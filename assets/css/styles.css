@@ -81,12 +81,12 @@
 }
 @keyframes circleD {
   0% {
-    background: linear-gradient(#9fd1ff, #a9e6f8);
+    background: linear-gradient(#5794cd, #0385ad);
     width: 0vw;
     height: 0vh;
   }
   100% {
-    background: linear-gradient(#9fd1ff, #a9e6f8);
+    background: linear-gradient(#5794cd, #0385ad);
     width: 3000px;
     height: 3000px;
   }
@@ -222,7 +222,7 @@
   background: linear-gradient(#2b2994, #494cab);
 }
 .container.day {
-  background: linear-gradient(#9fd1ff, #a9e6f8);
+  background: linear-gradient(#5794cd, #0385ad);
 }
 .container::before {
   content: "";
@@ -405,7 +405,7 @@
 }
 @media (max-width: 767px) {
   .about-container-skills {
-    min-height: 100px;
+    min-height: 72px;
     margin-bottom: 50px;
   }
 }
@@ -989,7 +989,7 @@ body {
   overflow-x: hidden;
 }
 body.day {
-  background: linear-gradient(#9fd1ff, #a9e6f8);
+  background: linear-gradient(#5794cd, #0385ad);
 }
 body.night {
   background: linear-gradient(#2b2994, #494cab);
