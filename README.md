@@ -22,7 +22,7 @@ The "Home" section features a visually appealing day and night scenario with flo
 
 ## About Me
 
-n the "About Me" section, you'll find a comprehensive overview introducing my background, skills, and professional motivations.
+In the "About Me" section, you'll find a comprehensive overview introducing my background, skills, and professional motivations.
 
 ## Featured Projects
 
