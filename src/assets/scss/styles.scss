@@ -1,3 +1,4 @@
+@import './variables/colors';
 @import './components/header.scss';
 @import './pages/home.scss';
 @import './pages/introduction.scss';
@@ -10,45 +11,50 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 200;
-  src: local('Roboto'), url('../fonts/Roboto/Roboto-Thin.ttf') format('ttf'),
+  src: local('Roboto'),
+    url('/assets/fonts/Roboto/Roboto-Thin.ttf') format('ttf'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('../fonts/Roboto/Roboto-Thin.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('/assets/fonts/Roboto/Roboto-Thin.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: local('Roboto'), url('../fonts/Roboto/Roboto-Light.ttf') format('ttf'),
+  src: local('Roboto'),
+    url('/assets/fonts/Roboto/Roboto-Light.ttf') format('ttf'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('../fonts/Roboto/Roboto-Light.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('/assets/fonts/Roboto/Roboto-Light.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), url('../fonts/Roboto/Roboto-Medium.ttf') format('ttf'),
+  src: local('Roboto'),
+    url('/assets/fonts/Roboto/Roboto-Medium.ttf') format('ttf'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('../fonts/Roboto/Roboto-Medium.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('/assets/fonts/Roboto/Roboto-Medium.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 800;
-  src: local('Roboto'), url('../fonts/Roboto/Roboto-Bold.ttf') format('ttf'),
+  src: local('Roboto'),
+    url('/assets/fonts/Roboto/Roboto-Bold.ttf') format('ttf'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('../fonts/Roboto/Roboto-Bold.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('/assets/fonts/Roboto/Roboto-Bold.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: local('Roboto'), url('../fonts/Roboto/Roboto-Black.ttf') format('ttf'),
+  src: local('Roboto'),
+    url('/assets/fonts/Roboto/Roboto-Black.ttf') format('ttf'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('../fonts/Roboto/Roboto-Black.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('/assets/fonts/Roboto/Roboto-Black.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 * {
@@ -157,7 +163,7 @@ body {
   &::after {
     content: 'CLICK!';
 
-    color: #2b2994;
+    color: var(--ec-color-primary);
 
     display: flex;
     align-items: center;
@@ -171,7 +177,7 @@ body {
 
     position: absolute;
 
-    border: 40px solid #2b2994;
+    border: 40px solid var(--ec-color-primary);
     border-radius: 50%;
     opacity: 1;
 

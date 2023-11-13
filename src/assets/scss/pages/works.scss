@@ -29,12 +29,11 @@
       height: 400px;
 
       display: flex;
-      align-items: center;
       flex-direction: column;
       justify-content: space-between;
 
-      color: #000;
-      background-color: #494c87;
+      color: var(--ec-color-neutral-100);
+      background-color: var(--ec-color-primary);
 
       border-radius: 8px;
 
@@ -71,7 +70,11 @@
         border: 10px solid;
         border-image-slice: 1;
         border-width: 5px;
-        border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+        border-image-source: linear-gradient(
+          to left,
+          var(--ec-color-primary-dark),
+          var(--ec-color-primary)
+        );
 
         padding: 0px;
 
@@ -84,65 +87,69 @@
           position: absolute;
           left: 0;
 
-          background-image: linear-gradient(to left, #743ad5, #d53a9d);
+          background-image: linear-gradient(
+            to left,
+            var(--ec-color-primary-dark),
+            var(--ec-color-primary)
+          );
 
           margin-top: 32px;
         }
       }
 
       &:nth-child(4) {
-        background: linear-gradient(180deg, #ffffff, #ff74c3);
-
         em {
           width: 100%;
           height: 140px;
+          max-height: 140px;
 
           background-size: contain;
-          background-image: url('../images/svg/branding-logo-horizontal.svg');
+          background-image: url('/assets/images/svg/branding-logo-horizontal.svg');
           background-repeat: no-repeat;
           background-position: center;
         }
       }
 
       &:nth-child(3) {
-        background: linear-gradient(297deg, #ffffff, #fff0b3);
-
         em {
           width: 100%;
-          height: 184px;
+          height: 140px;
+          max-height: 140px;
 
           background-size: contain;
-          background-image: url(../images/png/everis.png);
+          background-image: url(/assets/images/png/everis.png);
           background-repeat: no-repeat;
           background-position: center;
         }
       }
 
       &:nth-child(2) {
-        background: linear-gradient(180deg, #27e3f896, #ffffff);
-
         em {
           width: 100%;
           height: 140px;
+          max-height: 140px;
 
           background-size: contain;
-          background-image: url(../images/png/senac.png);
+          background-image: url(/assets/images/png/senac.png);
           background-repeat: no-repeat;
           background-position: center;
         }
       }
 
       &__my-career {
-        width: 82px;
-
         font-weight: bold;
         font-size: 14px;
+        letter-spacing: 2px;
 
         color: #fff;
 
-        background-image: linear-gradient(to left, #743ad5, #d53a9d);
+        background-image: linear-gradient(
+          to left,
+          var(--ec-color-primary-dark),
+          var(--ec-color-primary)
+        );
 
-        padding: 0 0.125rem;
+        padding: 0 24px;
       }
 
       &__date {
@@ -154,7 +161,7 @@
           content: '.';
 
           font-size: 48px;
-          color: #494cab;
+          color: var(--ec-color-primary-regular);
         }
       }
     }

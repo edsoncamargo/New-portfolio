@@ -2,7 +2,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(122, 125, 222);
+  background: var(--ec-color-primary);
   overflow: visible;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -17,7 +17,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgb(61, 64, 131);
+    background: var(--ec-color-primary-medium);
     transform: translate3d(0, 0.75em, -1em);
     -webkit-transform: translate3d(0, 0.75em, -1em);
     transition: all 175ms cubic-bezier(0, 0, 1, 1);
@@ -32,7 +32,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgb(35, 37, 93);
+    background: var(--ec-color-primary-regular);
     transform: translate3d(0, 1.4em, -1em);
     -webkit-transform: translate3d(0, 1.4em, -1em);
     transition: all 175ms cubic-bezier(0, 0, 1, 1);
@@ -42,7 +42,7 @@ footer {
   p {
     position: relative;
     z-index: 10;
-    color: #fff;
+    color: var(--ec-color-neutral-100);
     font-size: 16px;
     padding: 24px;
 

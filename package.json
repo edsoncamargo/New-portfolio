@@ -1,0 +1,31 @@
+{
+  "name": "ec-portfolio",
+  "version": "1.0.0",
+  "description": "ec-portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build:watch": "webpack --config webpack.config.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edsoncamargo/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edsoncamargo/Portfolio/issues"
+  },
+  "homepage": "https://github.com/edsoncamargo/Portfolio#readme",
+  "devDependencies": {
+    "sass": "1.69.5",
+    "sass-loader": "13.3.2",
+    "webpack": "5.89.0",
+    "webpack-cli": "5.1.4"
+  },
+  "dependencies": {
+    "css-loader": "6.8.1",
+    "mini-css-extract-plugin": "2.7.6"
+  }
+}
