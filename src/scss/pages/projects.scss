@@ -19,6 +19,7 @@
       height: 350px;
       min-height: 350px;
 
+      flex-grow: 1;
       flex-basis: calc(33.3% - 24px);
 
       display: flex;
@@ -36,7 +37,7 @@
 
       padding: 24px;
       margin-right: 24px;
-      margin-bottom: 50px;
+      margin-bottom: 24px;
 
       border-radius: solid 4px;
 
