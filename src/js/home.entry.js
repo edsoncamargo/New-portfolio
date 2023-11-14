@@ -1,4 +1,6 @@
-function openHomeDoors() {
+export function openHomeDoors() {
+  const cursor = document.querySelector('.cursor');
+
   cursor.setAttribute('style', 'top: auto; left: auto; display: none;');
   cursor.classList.add('none-cursor');
 
@@ -60,7 +62,7 @@ function openHomeDoors() {
   }, 600);
 }
 
-function initParallaxEffect() {
+export function initParallaxEffect() {
   const navbarBrand = document.getElementById('navbarBrand');
 
   const stars = document.getElementById('stars');
@@ -111,7 +113,7 @@ function initParallaxEffect() {
   });
 }
 
-function initMouseParallaxEffect() {
+export function initMouseParallaxEffect() {
   var userHasScrolled = false;
 
   window.onscroll = function (e) {
@@ -147,3 +149,7 @@ function initMouseParallaxEffect() {
   //   }
   // });
 }
+
+window.openHomeDoors = openHomeDoors;
+window.initParallaxEffect = initParallaxEffect;
+window.initMouseParallaxEffect = initMouseParallaxEffect;

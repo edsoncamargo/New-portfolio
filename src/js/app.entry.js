@@ -28,7 +28,7 @@ document.addEventListener('mousemove', (e) => {
   }
 });
 
-function initCustomCursorClickHandler() {
+export function initCustomCursorClickHandler() {
   document.addEventListener('mousemove', (e) => {
     const clickables = document.querySelectorAll('.clickable');
     let isClickable = false;
@@ -80,3 +80,5 @@ function initCustomCursorClickHandler() {
     }
   });
 }
+
+window.initCustomCursorClickHandler = initCustomCursorClickHandler;
