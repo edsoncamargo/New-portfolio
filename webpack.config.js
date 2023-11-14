@@ -43,7 +43,6 @@ async function generateWebpackConfig() {
     process.exit(1);
   }
 
-  console.log(entries);
   const webpackConfig = {
     entry: [...entries, './src/scss/styles.scss'],
     output: {
