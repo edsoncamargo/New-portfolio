@@ -148,7 +148,7 @@ body {
   width: 80px;
   height: 80px;
 
-  border: 2px dashed #494cab;
+  border: 2px dashed var(--ec-color-primary);
   border-radius: 50px;
 
   position: absolute;
@@ -162,7 +162,7 @@ body {
   display: none;
 
   &::after {
-    content: 'CLICK!';
+    content: '🖱️';
 
     color: var(--ec-color-primary);
 
@@ -171,7 +171,7 @@ body {
     justify-content: center;
 
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 2.4em;
 
     width: 80px;
     height: 80px;
@@ -185,7 +185,7 @@ body {
     top: -42px;
     left: -42px;
 
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(35, 37, 93, 0.9);
 
     animation: cursor-animation-two 0.5s infinite alternate;
   }

@@ -101,7 +101,6 @@
       font-size: 12em;
       line-height: 0.8em;
       color: var(--ec-color-neutral-100);
-      // text-stroke: 2px var(--ec-color-primary-dark);
       text-shadow: 3px 3px 0 var(--ec-color-primary-dark),
         -3px 3px 0 var(--ec-color-primary-dark),
         -3px -3px 0 var(--ec-color-primary-dark),
@@ -165,13 +164,13 @@
         }
 
         @media (max-width: 767px) {
-          content: 'CLICK!';
+          content: '👆🏼';
 
           display: flex;
           align-items: center;
           justify-content: center;
 
-          font-size: 8px;
+          font-size: 24px;
           color: var(--ec-color-neutral-100);
           -webkit-text-stroke: 0px transparent;
 
