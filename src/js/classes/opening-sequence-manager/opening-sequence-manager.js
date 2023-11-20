@@ -9,48 +9,48 @@ class OpeningSequenceManager {
   }
 
   start() {
-    this.hideCustomCursorWhenClickHello()
+    this.hideCustomCursorWhenClickHello(0)
       .then(() => ThemeManager.applyTimeClassIn('.container'))
-      .then(() => this.openDoors())
-      .then(() => this.animateHello())
-      .then(() => this.animateHome())
+      .then(() => this.openDoors(100))
+      .then(() => this.animateHello(600))
+      .then(() => this.animateHome(1000))
       .then(() => this.startManagers())
-      .then(() => this.showAllLandingPageSessions());
+      .then(() => this.showAllLandingPageSessions(200));
   }
 
-  hideCustomCursorWhenClickHello() {
+  hideCustomCursorWhenClickHello(timeout) {
     return new Promise((resolve) => {
       this.eCursor.setAttribute(
         'style',
         'top: auto; left: auto; display: none;'
       );
       this.eCursor.classList.add('none-cursor');
-      setTimeout(resolve, 0);
+      setTimeout(resolve, timeout);
     });
   }
 
-  openDoors() {
+  openDoors(timeout) {
     return new Promise((resolve) => {
       setTimeout(() => {
         document.querySelector('.left').classList.add('open');
         document.querySelector('.right').classList.add('open');
         resolve();
-      }, 100);
+      }, timeout);
     });
   }
 
-  animateHello() {
+  animateHello(timeout) {
     return new Promise((resolve) => {
       setTimeout(() => {
         const eHello = document.getElementById('hello');
         eHello.classList.add('open');
         ThemeManager.applyTimeClassIn('#hello');
         resolve();
-      }, 600);
+      }, timeout);
     });
   }
 
-  animateHome() {
+  animateHome(timeout) {
     return new Promise((resolve) => {
       setTimeout(() => {
         ThemeManager.applyTimeClassIn('body');
@@ -64,7 +64,7 @@ class OpeningSequenceManager {
           document.getElementById('header').classList.add('header-opened');
           resolve();
         }, 200);
-      }, 600);
+      }, timeout);
     });
   }
 
@@ -78,12 +78,12 @@ class OpeningSequenceManager {
     });
   }
 
-  showAllLandingPageSessions() {
+  showAllLandingPageSessions(timeout) {
     return new Promise((resolve) => {
       setTimeout(() => {
         document.getElementById('main').classList.add('open');
         resolve();
-      }, 200);
+      }, timeout);
     });
   }
 }

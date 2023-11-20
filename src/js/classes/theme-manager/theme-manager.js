@@ -1,4 +1,4 @@
-import { isDayTime } from '../../common/utils.entry';
+import { Utils } from '../../common/utils/utils';
 
 export class ThemeManager {
   constructor() {
@@ -34,7 +34,7 @@ export class ThemeManager {
   }
 
   #changeThemeByHour() {
-    if (isDayTime()) {
+    if (Utils.isDayTime()) {
       this.eStars.style.opacity = '0';
 
       this.elements.forEach((element) => {
@@ -49,7 +49,7 @@ export class ThemeManager {
   static applyTimeClassIn(targetSelector) {
     const element = document.querySelector(targetSelector);
 
-    if (isDayTime()) {
+    if (Utils.isDayTime()) {
       element.classList.add('day');
       return;
     }

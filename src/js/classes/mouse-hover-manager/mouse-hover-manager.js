@@ -1,3 +1,5 @@
+import { Utils } from "../../common/utils/utils";
+
 export class MouseHoverManager {
   constructor() {
     this.#getElements();
@@ -98,7 +100,7 @@ export class MouseHoverManager {
   }
 
   #handleNonClickable() {
-    if (isDayTime()) {
+    if (Utils.isDayTime()) {
       this.#setAutoCursorAfterDelay();
     } else {
       document.body.style.cursor = 'auto';
