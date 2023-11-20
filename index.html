@@ -1,83 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/dist/ec-portfolio/ec-portfolio.bundle.css" />
+        <link
+            rel="stylesheet"
+            href="/dist/ec-portfolio/ec-portfolio.bundle.css"
+        />
 
-    <title>Edson Camargo Menezes | Web Developer</title>
+        <title>Edson Camargo Menezes | Web Developer</title>
 
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="description"
-      content="Edson Camargo Menezes - Web developer, containing personal and professional information/content."
-    />
-    <meta
-      name="keywords"
-      content="portfolio, about, projects, contact, web developer,
+        <meta name="robots" content="index, follow" />
+        <meta
+            name="description"
+            content="Edson Camargo Menezes - Web developer, containing personal and professional information/content."
+        />
+        <meta
+            name="keywords"
+            content="portfolio, about, projects, contact, web developer,
     web development, bachelor of information systems, portfólio, sobre, projetos, contato, edson camargo, edson camargo menezes, desenvolvedor web, 
     desenvolvimento web, bacharelado em sistemas de informação, bsi, html5, css3, angular, springboot, typescipt, javascript, java, mysql, 
     firebase realtime database, vue.js"
-    />
+        />
 
-    <meta
-      name="google-site-verification"
-      content="Gyg6F0vFKCXbnKVzMRwML1DnWdgOQAguC6IiyFqg4JA"
-    />
+        <meta
+            name="google-site-verification"
+            content="Gyg6F0vFKCXbnKVzMRwML1DnWdgOQAguC6IiyFqg4JA"
+        />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Edson Camargo Menezes | Web Developer" />
-    <meta
-      property="og:site_name"
-      content="Edson Camargo Menezes | Web Developer"
-    />
-    <meta property="og:url" content="https://www.edsoncamargo.dev" />
-    <meta
-      property="og:description"
-      content="Edson Camargo Menezes - Web developer, containing personal and professional information/content."
-    />
-    <meta property="og:image" content="/assets/images/thumb.png" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="Edson Camargo Menezes | Web Developer"
+        />
+        <meta
+            property="og:site_name"
+            content="Edson Camargo Menezes | Web Developer"
+        />
+        <meta property="og:url" content="https://www.edsoncamargo.dev" />
+        <meta
+            property="og:description"
+            content="Edson Camargo Menezes - Web developer, containing personal and professional information/content."
+        />
+        <meta property="og:image" content="/assets/images/thumb.png" />
 
-    <meta name="author" content="Edson Camargo Menezes" />
-    <meta name="revised" content="14/11/2023" />
-  </head>
+        <meta name="author" content="Edson Camargo Menezes" />
+        <meta name="revised" content="14/11/2023" />
+    </head>
 
-  <body>
-    <main>
-      <div class="cursor"></div>
-      <div class="cursor-click"></div>
+    <body>
+        <main>
+            <div class="cursor"></div>
+            <div class="cursor-click"></div>
 
-      <section class="home" id="home">
-        <div
-          onclick="new OpeningSequenceManager().start()"
-          id="hello"
-          class="hello opening"
-        >
-            <h1>HE</h1>
-            <h1>LLO.</h1>
-        </div>
+            <section class="home" id="home">
+                <div
+                    onclick="new OpeningSequenceManager().start()"
+                    id="hello"
+                    class="hello opening"
+                >
+                    <h1>HE</h1>
+                    <h1>LLO.</h1>
+                </div>
 
-        <div class="left"></div>
-        <div class="right"></div>
-      </section>
+                <div class="left"></div>
+                <div class="right"></div>
+            </section>
 
-      <section id="lp" class="ec-portfolio d-none">
-        <div w3-include-html="./src/includes/header.html"></div>
-        <div w3-include-html="./src/includes/introduction.html"></div>
-        <div w3-include-html="./src/includes/about.html"></div>
-        <div w3-include-html="./src/includes/projects.html"></div>
-        <div w3-include-html="./src/includes/works.html"></div>
-        <div w3-include-html="./src/includes/footer.html"></div>
-      </section>
-    </main>
+            <section id="lp" class="ec-portfolio d-none">
+                <div w3-include-html="./src/includes/header.html"></div>
+                <div w3-include-html="./src/includes/introduction.html"></div>
+                <div w3-include-html="./src/includes/about.html"></div>
+                <div w3-include-html="./src/includes/projects.html"></div>
+                <div w3-include-html="./src/includes/works.html"></div>
+                <div w3-include-html="./src/includes/footer.html"></div>
+            </section>
+        </main>
 
-    <script src="/dist/ec-portfolio/ec-portfolio.bundle.js"></script>
+        <script src="/dist/ec-portfolio/ec-portfolio.bundle.js"></script>
 
-    <script>
-      new MouseHoverManager().startCustomHoverHelloHandler();
-      new W3().start();
-    </script>
-  </body>
+        <script>
+            new MouseHoverManager().startCustomHoverHelloHandler()
+            new W3().start()
+        </script>
+    </body>
 </html>

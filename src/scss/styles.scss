@@ -1,253 +1,258 @@
-@import './variables/colors';
-@import './components/header.scss';
-@import './pages/home.scss';
-@import './pages/introduction.scss';
-@import './pages/about.scss';
-@import './pages/projects.scss';
-@import './pages/works.scss';
-@import './components/footer.scss';
-@import './pages/404.scss';
+@import "./variables/colors";
+@import "./components/header.scss";
+@import "./pages/home.scss";
+@import "./pages/introduction.scss";
+@import "./pages/about.scss";
+@import "./pages/projects.scss";
+@import "./pages/works.scss";
+@import "./components/footer.scss";
+@import "./pages/404.scss";
 
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Roboto'),
-    url('/assets/fonts/Roboto/Roboto-Thin.ttf') format('ttf'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('/assets/fonts/Roboto/Roboto-Thin.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 200;
+    src:
+        local("Roboto"),
+        url("/assets/fonts/Roboto/Roboto-Thin.ttf") format("ttf"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("/assets/fonts/Roboto/Roboto-Thin.ttf") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto'),
-    url('/assets/fonts/Roboto/Roboto-Light.ttf') format('ttf'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('/assets/fonts/Roboto/Roboto-Light.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src:
+        local("Roboto"),
+        url("/assets/fonts/Roboto/Roboto-Light.ttf") format("ttf"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("/assets/fonts/Roboto/Roboto-Light.ttf") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'),
-    url('/assets/fonts/Roboto/Roboto-Medium.ttf') format('ttf'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('/assets/fonts/Roboto/Roboto-Medium.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("Roboto"),
+        url("/assets/fonts/Roboto/Roboto-Medium.ttf") format("ttf"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("/assets/fonts/Roboto/Roboto-Medium.ttf") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Roboto'),
-    url('/assets/fonts/Roboto/Roboto-Bold.ttf') format('ttf'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('/assets/fonts/Roboto/Roboto-Bold.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 800;
+    src:
+        local("Roboto"),
+        url("/assets/fonts/Roboto/Roboto-Bold.ttf") format("ttf"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("/assets/fonts/Roboto/Roboto-Bold.ttf") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Roboto'),
-    url('/assets/fonts/Roboto/Roboto-Black.ttf') format('ttf'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('/assets/fonts/Roboto/Roboto-Black.ttf') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    src:
+        local("Roboto"),
+        url("/assets/fonts/Roboto/Roboto-Black.ttf") format("ttf"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("/assets/fonts/Roboto/Roboto-Black.ttf") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-  font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 
-  &.day {
-    background: linear-gradient(#5794cd, #0385ad);
-  }
+    &.day {
+        background: linear-gradient(#5794cd, #0385ad);
+    }
 
-  &.night {
-    background: linear-gradient(#2b2994, #494cab);
-  }
+    &.night {
+        background: linear-gradient(#2b2994, #494cab);
+    }
 }
 
 .container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  transform: translateY(50%);
-  opacity: 0;
+    transform: translateY(50%);
+    opacity: 0;
 
-  transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
 
-  &.open {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+    &.open {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .title-container {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 
-  h2 {
-    font-size: 1.3rem;
-    letter-spacing: 10px;
-    color: rgba(238, 238, 238, 0.55);
+    h2 {
+        font-size: 1.3rem;
+        letter-spacing: 10px;
+        color: rgba(238, 238, 238, 0.55);
 
-    text-transform: uppercase;
+        text-transform: uppercase;
 
-    @media (max-width: 767px) {
-      max-width: 250px;
+        @media (max-width: 767px) {
+            max-width: 250px;
 
-      font-size: 1rem;
+            font-size: 1rem;
 
-      margin-bottom: 16px;
+            margin-bottom: 16px;
+        }
     }
-  }
 
-  h3 {
-    font-size: 4rem;
-    letter-spacing: -1px;
+    h3 {
+        font-size: 4rem;
+        letter-spacing: -1px;
 
-    text-transform: capitalize;
+        text-transform: capitalize;
 
-    @media (max-width: 767px) {
-      max-width: 273px;
+        @media (max-width: 767px) {
+            max-width: 273px;
 
-      font-size: 2.5rem;
-      line-height: 40px;
+            font-size: 2.5rem;
+            line-height: 40px;
+        }
     }
-  }
 }
 
 .text-container {
-  p {
-    letter-spacing: 3px;
-    margin-bottom: 12px;
-  }
+    p {
+        letter-spacing: 3px;
+        margin-bottom: 12px;
+    }
 }
 
 .d-none {
-  display: none;
+    display: none;
 }
 
 .cursor {
-  width: 80px;
-  height: 80px;
-
-  border: 2px dashed var(--ec-color-primary);
-  border-radius: 50px;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 9999;
-
-  pointer-events: none;
-
-  animation: cursor-animation 0.5s infinite alternate;
-  animation: opacity 0.1s ease-in-out;
-
-  display: none;
-
-  &::after {
-    content: '🖱️';
-
-    color: var(--ec-color-primary);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-weight: bold;
-    font-size: 2.4em;
-
     width: 80px;
     height: 80px;
 
+    border: 2px dashed var(--ec-color-primary);
+    border-radius: 50px;
+
     position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
 
-    border: 40px solid var(--ec-color-primary);
-    border-radius: 50%;
-    opacity: 1;
+    pointer-events: none;
 
-    top: -42px;
-    left: -42px;
+    animation: cursor-animation 0.5s infinite alternate;
+    animation: opacity 0.1s ease-in-out;
 
-    background: rgba(35, 37, 93, 0.9);
+    display: none;
 
-    animation: cursor-animation-two 0.5s infinite alternate;
-  }
+    &::after {
+        content: "🖱️";
+
+        color: var(--ec-color-primary);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-weight: bold;
+        font-size: 2.4em;
+
+        width: 80px;
+        height: 80px;
+
+        position: absolute;
+
+        border: 40px solid var(--ec-color-primary);
+        border-radius: 50%;
+        opacity: 1;
+
+        top: -42px;
+        left: -42px;
+
+        background: rgba(35, 37, 93, 0.9);
+
+        animation: cursor-animation-two 0.5s infinite alternate;
+    }
 }
 
 .cursor-click {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 
-  border: 2px solid white;
-  border-radius: 50px;
+    border: 2px solid white;
+    border-radius: 50px;
 
-  position: absolute;
-  z-index: 2;
+    position: absolute;
+    z-index: 2;
 
-  pointer-events: none;
+    pointer-events: none;
 
-  display: none;
+    display: none;
 
-  animation: cursor-animation-three 0.5s infinite alternate;
+    animation: cursor-animation-three 0.5s infinite alternate;
 }
 
 @keyframes cursor-animation {
-  from {
-    transform: scale(1);
-  }
+    from {
+        transform: scale(1);
+    }
 
-  to {
-    transform: scale(0.7);
-  }
+    to {
+        transform: scale(0.7);
+    }
 }
 
 @keyframes cursor-animation-two {
-  from {
-    transform: scale(1);
-  }
+    from {
+        transform: scale(1);
+    }
 
-  to {
-    transform: scale(0.4);
-  }
+    to {
+        transform: scale(0.4);
+    }
 }
 
 @keyframes cursor-animation-three {
-  0% {
-    border-radius: 50px;
-    transform: scale(1);
-  }
+    0% {
+        border-radius: 50px;
+        transform: scale(1);
+    }
 
-  50% {
-    border-radius: 10px;
-    transform: scale(3);
-  }
+    50% {
+        border-radius: 10px;
+        transform: scale(3);
+    }
 
-  100% {
-    border-radius: 50px;
-    transform: scale(1);
-    opacity: 0;
-  }
+    100% {
+        border-radius: 50px;
+        transform: scale(1);
+        opacity: 0;
+    }
 }
 
 .no-wrap {
-  white-space: nowrap;
+    white-space: nowrap;
 }

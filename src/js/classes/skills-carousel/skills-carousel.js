@@ -1,38 +1,38 @@
 export class SkillsCarousel {
-  value = 0;
+    value = 0
 
-  constructor() {
-    this.#getElements();
-  }
+    constructor() {
+        this.#getElements()
+    }
 
-  #getElements() {
-    this.eAboutTop = document.getElementById('aboutTop');
-    this.eAboutBottom = document.getElementById('aboutBottom');
-  }
+    #getElements() {
+        this.eAboutTop = document.getElementById("aboutTop")
+        this.eAboutBottom = document.getElementById("aboutBottom")
+    }
 
-  start() {
-    this.#handleSkillsScrolling();
-  }
+    start() {
+        this.#handleSkillsScrolling()
+    }
 
-  #handleSkillsScrolling() {
-    window.addEventListener('scroll', () => {
-      const value = window.scrollY;
-      const translationFactor = window.screen.width > 767 ? 0.8 : 0.2;
+    #handleSkillsScrolling() {
+        window.addEventListener("scroll", () => {
+            const value = window.scrollY
+            const translationFactor = window.screen.width > 767 ? 0.8 : 0.2
 
-      this.#setTranform(
-        this.eAboutTop,
-        `translateX(${value * -translationFactor}px)`
-      );
-      this.#setTranform(
-        this.eAboutBottom,
-        `translateX(${value * translationFactor}px)`
-      );
-    });
-  }
+            this.#setTranform(
+                this.eAboutTop,
+                `translateX(${value * -translationFactor}px)`
+            )
+            this.#setTranform(
+                this.eAboutBottom,
+                `translateX(${value * translationFactor}px)`
+            )
+        })
+    }
 
-  #setTranform(element, value) {
-    element.style.transform = value;
-  }
+    #setTranform(element, value) {
+        element.style.transform = value
+    }
 }
 
-window.SkillsCarousel = SkillsCarousel;
+window.SkillsCarousel = SkillsCarousel

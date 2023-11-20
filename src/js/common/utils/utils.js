@@ -1,8 +1,8 @@
 export class Utils {
-  constructor() { }
+    constructor() {}
 
-  static isDayTime() {
-    const hours = new Date().getHours();
-    return hours > 6 && hours < 18;
-  }
+    static isDayTime() {
+        const hours = new Date().getHours()
+        return hours > 6 && hours < 18
+    }
 }

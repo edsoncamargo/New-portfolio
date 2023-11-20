@@ -1,180 +1,180 @@
 .works-container {
-  color: #fff;
-  background-color: #101823;
+    color: #fff;
+    background-color: #101823;
 
-  position: relative;
+    position: relative;
 
-  padding: 62px 100px;
+    padding: 62px 100px;
 
-  overflow-x: hidden;
+    overflow-x: hidden;
 
-  @media (max-width: 767px) {
-    padding: 24px;
-  }
-
-  &__cards {
-    width: calc(100% + 12px);
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-
-    @media (max-width: 968px) {
-      width: 100%;
+    @media (max-width: 767px) {
+        padding: 24px;
     }
 
-    &__item {
-      height: 400px;
+    &__cards {
+        width: calc(100% + 12px);
 
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      flex-grow: 1;
-      flex-basis: calc(33.3% - 24px);
-
-      color: var(--ec-color-neutral-100);
-      background-color: var(--ec-color-primary);
-
-      border-radius: 8px;
-
-      padding: 24px;
-      padding-bottom: 32px;
-
-      margin-right: 24px;
-      margin-bottom: 24px;
-
-      @media (max-width: 1400px) and (min-width: 1295px) {
-        flex-basis: 45%;
-      }
-
-      @media (max-width: 1294px) and (min-width: 867px) {
-        flex-basis: 45%;
-        margin-right: 8px;
-      }
-
-      @media (max-width: 968px) {
-        flex-basis: 100%;
-        margin-right: 0px;
-        margin-bottom: 24px;
-      }
-
-      .works-container__cards__item__title {
-        width: 132px;
-        align-self: flex-start;
-
-        font-size: 22px;
-        letter-spacing: 1.5px;
-        font-weight: bold;
-      }
-
-      &:first-child {
         display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
 
-        position: relative;
-
-        background-color: transparent;
-        border: 10px solid;
-        border-image-slice: 1;
-        border-width: 5px;
-        border-image-source: linear-gradient(
-          to left,
-          var(--ec-color-primary-dark),
-          var(--ec-color-primary)
-        );
-
-        padding: 0px;
-
-        &::after {
-          content: '';
-
-          width: 100%;
-          height: 2px;
-
-          position: absolute;
-          left: 0;
-
-          background-image: linear-gradient(
-            to left,
-            var(--ec-color-primary-dark),
-            var(--ec-color-primary)
-          );
-
-          margin-top: 32px;
+        @media (max-width: 968px) {
+            width: 100%;
         }
-      }
 
-      &:nth-child(4) {
-        em {
-          width: 100%;
-          height: 140px;
-          max-height: 140px;
+        &__item {
+            height: 400px;
 
-          background-size: contain;
-          background-image: url('/assets/images/svg/branding-logo-horizontal.svg');
-          background-repeat: no-repeat;
-          background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            flex-grow: 1;
+            flex-basis: calc(33.3% - 24px);
+
+            color: var(--ec-color-neutral-100);
+            background-color: var(--ec-color-primary);
+
+            border-radius: 8px;
+
+            padding: 24px;
+            padding-bottom: 32px;
+
+            margin-right: 24px;
+            margin-bottom: 24px;
+
+            @media (max-width: 1400px) and (min-width: 1295px) {
+                flex-basis: 45%;
+            }
+
+            @media (max-width: 1294px) and (min-width: 867px) {
+                flex-basis: 45%;
+                margin-right: 8px;
+            }
+
+            @media (max-width: 968px) {
+                flex-basis: 100%;
+                margin-right: 0px;
+                margin-bottom: 24px;
+            }
+
+            .works-container__cards__item__title {
+                width: 132px;
+                align-self: flex-start;
+
+                font-size: 22px;
+                letter-spacing: 1.5px;
+                font-weight: bold;
+            }
+
+            &:first-child {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: center;
+
+                position: relative;
+
+                background-color: transparent;
+                border: 10px solid;
+                border-image-slice: 1;
+                border-width: 5px;
+                border-image-source: linear-gradient(
+                    to left,
+                    var(--ec-color-primary-dark),
+                    var(--ec-color-primary)
+                );
+
+                padding: 0px;
+
+                &::after {
+                    content: "";
+
+                    width: 100%;
+                    height: 2px;
+
+                    position: absolute;
+                    left: 0;
+
+                    background-image: linear-gradient(
+                        to left,
+                        var(--ec-color-primary-dark),
+                        var(--ec-color-primary)
+                    );
+
+                    margin-top: 32px;
+                }
+            }
+
+            &:nth-child(4) {
+                em {
+                    width: 100%;
+                    height: 140px;
+                    max-height: 140px;
+
+                    background-size: contain;
+                    background-image: url("/assets/images/svg/branding-logo-horizontal.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+
+            &:nth-child(3) {
+                em {
+                    width: 100%;
+                    height: 140px;
+                    max-height: 140px;
+
+                    background-size: contain;
+                    background-image: url(/assets/images/png/everis.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+
+            &:nth-child(2) {
+                em {
+                    width: 100%;
+                    height: 140px;
+                    max-height: 140px;
+
+                    background-size: contain;
+                    background-image: url(/assets/images/png/senac.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+
+            &__my-career {
+                font-weight: bold;
+                font-size: 14px;
+                letter-spacing: 2px;
+
+                color: #fff;
+
+                background-image: linear-gradient(
+                    to left,
+                    var(--ec-color-primary-dark),
+                    var(--ec-color-primary)
+                );
+
+                padding: 0 24px;
+            }
+
+            &__date {
+                font-size: 16px;
+                line-height: 10px;
+                letter-spacing: 1.5px;
+
+                &:after {
+                    content: ".";
+
+                    font-size: 48px;
+                    color: var(--ec-color-primary-regular);
+                }
+            }
         }
-      }
-
-      &:nth-child(3) {
-        em {
-          width: 100%;
-          height: 140px;
-          max-height: 140px;
-
-          background-size: contain;
-          background-image: url(/assets/images/png/everis.png);
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-      }
-
-      &:nth-child(2) {
-        em {
-          width: 100%;
-          height: 140px;
-          max-height: 140px;
-
-          background-size: contain;
-          background-image: url(/assets/images/png/senac.png);
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-      }
-
-      &__my-career {
-        font-weight: bold;
-        font-size: 14px;
-        letter-spacing: 2px;
-
-        color: #fff;
-
-        background-image: linear-gradient(
-          to left,
-          var(--ec-color-primary-dark),
-          var(--ec-color-primary)
-        );
-
-        padding: 0 24px;
-      }
-
-      &__date {
-        font-size: 16px;
-        line-height: 10px;
-        letter-spacing: 1.5px;
-
-        &:after {
-          content: '.';
-
-          font-size: 48px;
-          color: var(--ec-color-primary-regular);
-        }
-      }
     }
-  }
 }

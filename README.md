@@ -8,9 +8,9 @@
 
 The following are the key technologies and tools used in the development of this app:
 
-- **HTML/Javascript/SCSS**: Core technologies for structuring, scripting, and styling the web page.
-- **Webpack**: Utilized for bundling JavaScript and CSS files, optimizing the performance of the virtual portfolio.
-- **Flexbox**: Utilized to create flexible and responsive layouts.
+-   **HTML/Javascript/SCSS**: Core technologies for structuring, scripting, and styling the web page.
+-   **Webpack**: Utilized for bundling JavaScript and CSS files, optimizing the performance of the virtual portfolio.
+-   **Flexbox**: Utilized to create flexible and responsive layouts.
 
 ## Hello Screen
 
@@ -38,25 +38,25 @@ To explore this virtual portfolio on your local machine, follow these steps:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/edsoncamargo/Portfolio
-   cd your-path/Portfolio
-   ```
+    ```bash
+    git clone https://github.com/edsoncamargo/Portfolio
+    cd your-path/Portfolio
+    ```
 
 2. Install the dependencies:
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
 3. Start the development server:
 
-   ```bash
-   npm run build:watch &&
-   ```
+    ```bash
+    npm run build:watch &&
+    ```
 
-- Go to extensions on VSCode and type `@recommended` after install Live Server.
-- Go Live `index.html` 🚀
+-   Go to extensions on VSCode and type `@recommended` after install Live Server.
+-   Go Live `index.html` 🚀
 
 ## Contribution
 
@@ -68,7 +68,7 @@ This project is licensed under the [MIT LECINSE](./LICENSE).
 
 ## Contact
 
-- Name: Edson Camargo Menezes
-- Email: contact@edsoncamargo.dev
+-   Name: Edson Camargo Menezes
+-   Email: contact@edsoncamargo.dev
 
 Embark on a journey through my portfolio and explore the narrative of my professional endeavors 🌟

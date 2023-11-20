@@ -1,4 +1,4 @@
-import LiquidCorpHolder from '../ec-portfolio-holder.js';
-import { W3 } from './w3.js';
+import LiquidCorpHolder from "../ec-portfolio-holder.js"
+import { W3 } from "./w3.js"
 
-LiquidCorpHolder.add('W3', W3);
+LiquidCorpHolder.add("W3", W3)
