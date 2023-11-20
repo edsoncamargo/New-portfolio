@@ -49,5 +49,3 @@ export class ParallaxEffectManager {
         })
     }
 }
-
-window.ParallaxEffectManager = ParallaxEffectManager

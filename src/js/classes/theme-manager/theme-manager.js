@@ -49,13 +49,13 @@ export class ThemeManager {
     static applyTimeClassIn(targetSelector) {
         const element = document.querySelector(targetSelector)
 
-        if (Utils.isDayTime()) {
-            element.classList.add("day")
-            return
-        }
+        if (element) {
+            if (Utils.isDayTime()) {
+                element.classList.add("day")
+                return
+            }
 
-        element.classList.add("night")
+            element.classList.add("night")
+        }
     }
 }
-
-window.ThemeManager = ThemeManager

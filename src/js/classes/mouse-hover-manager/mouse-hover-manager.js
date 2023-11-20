@@ -110,5 +110,3 @@ export class MouseHoverManager {
         this.#hideClickableCursor()
     }
 }
-
-window.MouseHoverManager = MouseHoverManager

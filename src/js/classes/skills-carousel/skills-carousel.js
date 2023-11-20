@@ -34,5 +34,3 @@ export class SkillsCarousel {
         element.style.transform = value
     }
 }
-
-window.SkillsCarousel = SkillsCarousel

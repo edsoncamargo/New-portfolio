@@ -2,8 +2,7 @@ import { ThemeManager } from "../theme-manager/theme-manager"
 import { ParallaxEffectManager } from "../parallax-effect-manager/parallax-effect-manager"
 import { SkillsCarousel } from "../skills-carousel/skills-carousel"
 import { MouseHoverManager } from "../mouse-hover-manager/mouse-hover-manager"
-
-class OpeningSequenceManager {
+export class OpeningSequenceManager {
     constructor() {
         this.eCursor = document.querySelector(".cursor")
     }
@@ -89,5 +88,3 @@ class OpeningSequenceManager {
         })
     }
 }
-
-window.OpeningSequenceManager = OpeningSequenceManager
