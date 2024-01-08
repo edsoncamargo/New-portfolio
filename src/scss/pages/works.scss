@@ -15,12 +15,12 @@
     &__timeline {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 32px;
 
         &__item {
             max-width: 564px;
             display: flex;
-            gap: 16px;
+            gap: 24px;
 
             &:first-child {
                 .works-container__timeline__item__line {
@@ -43,6 +43,19 @@
 
             &__line {
                 display: flex;
+                gap: 8px;
+
+                &__date {
+                    min-height: 64px;
+                    min-width: 64px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    span {
+                        opacity: 0.6;
+                    }
+                }
 
                 small {
                     display: flex;
@@ -60,10 +73,10 @@
                     &::before {
                         content: "";
                         display: block;
-                        height: calc(100% + 24px);
+                        height: calc(100% + 32px);
                         width: 2px;
                         position: relative;
-                        top: calc(-100% - 24px);
+                        top: calc(-100% - 32px);
                         background-color: var(--ec-color-neutral-100);
                     }
 
