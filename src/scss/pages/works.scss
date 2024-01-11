@@ -1,15 +1,16 @@
 .works-container {
     color: var(--ec-color-neutral-100);
     background-color: var(--ec-color-primary-dark);
-
     position: relative;
-
     padding: 62px 100px;
-
+    padding-bottom: calc(62px + 48px);
+    margin-bottom: 62px;
     overflow-x: hidden;
 
     @media (max-width: 767px) {
         padding: 24px;
+        padding-bottom: calc(24px + 24px);
+        margin-bottom: 24px;
     }
 
     &__timeline {

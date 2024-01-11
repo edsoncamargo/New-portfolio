@@ -1,14 +1,9 @@
 .about-container {
     color: var(--ec-color-neutral-100);
-    background-color: #101823;
-
+    background-color: var(--ec-color-primary-dark);
     position: relative;
-
     padding: 100px;
     padding-bottom: 0px;
-
-    position: relative;
-
     overflow-x: hidden;
 
     @media (max-width: 767px) {
@@ -18,12 +13,9 @@
 
     &-skills {
         min-height: 100px;
-
         display: flex;
         flex-direction: column;
-
         position: relative;
-
         margin-bottom: 92px;
 
         @media (max-width: 767px) {

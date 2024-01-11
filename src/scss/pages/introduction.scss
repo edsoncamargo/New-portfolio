@@ -19,7 +19,11 @@
         height: 200px;
         width: 100%;
 
-        background: linear-gradient(to top, #101823, transparent);
+        background: linear-gradient(
+            to top,
+            var(--ec-color-primary-dark),
+            transparent
+        );
         z-index: 200;
     }
 

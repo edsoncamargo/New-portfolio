@@ -1,11 +1,16 @@
 @import "./variables/colors";
+
 @import "./components/header.scss";
+
 @import "./pages/home.scss";
 @import "./pages/introduction.scss";
 @import "./pages/about.scss";
 @import "./pages/projects.scss";
 @import "./pages/works.scss";
+@import "./pages/highlight-video.scss";
+
 @import "./components/footer.scss";
+
 @import "./pages/404.scss";
 
 @font-face {
