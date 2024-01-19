@@ -55,8 +55,7 @@ To explore this virtual portfolio on your local machine, follow these steps:
         npm run build:dev
     ```
 
--   Go to extensions on VSCode and type `@recommended` after install Live Server.
--   Go Live `index.html` 🚀
+-   Install Live Server in VSCode extensions with `@recommended` and launch `index.html` 🚀
 
 ## Contribution
 
@@ -64,7 +63,7 @@ Contributions to enhance and improve this portfolio are welcome. If you encounte
 
 ## License
 
-This project is licensed under the [MIT LECINSE](./LICENSE).
+This project is licensed under the [MIT LICENSE](./LICENSE).
 
 ## Contact
 
