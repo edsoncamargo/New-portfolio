@@ -44,7 +44,7 @@ async function generateWebpackConfig() {
     }
 
     const webpackConfig = {
-        entry: [...entries, "./src/scss/styles.scss"],
+        entry: [...entries, "./src/styles/styles.scss"],
         output: {
             filename: `${projectName}.bundle.js`,
             path: outputPath
