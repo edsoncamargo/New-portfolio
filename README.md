@@ -39,20 +39,20 @@ To explore this virtual portfolio on your local machine, follow these steps:
 1. Clone the repository:
 
     ```bash
-        git clone https://github.com/edsoncamargo/Portfolio
-        cd your-path/Portfolio
+    git clone https://github.com/edsoncamargo/Portfolio
+    cd your-path/Portfolio
     ```
 
 2. Install the dependencies:
 
     ```bash
-        npm install
+    npm install
     ```
 
 3. Start the development server:
 
     ```bash
-        npm run build:dev
+    npm run build:dev
     ```
 
 -   Install Live Server in VSCode extensions with `@recommended` and launch `index.html` 🚀
