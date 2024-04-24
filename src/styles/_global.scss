@@ -104,6 +104,10 @@ body {
 
     display: none;
 
+    @media (hover: none) {
+        opacity: 0;
+    }
+
     &::after {
         content: "🖱️";
 

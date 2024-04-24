@@ -48,13 +48,13 @@ export class MouseHoverManager {
     }
 
     #setAutoCursorAfterDelay() {
-        let entrar = true
-        if (entrar) {
+        let enterIn = true
+        if (enterIn) {
             document.body.style.cursor = "auto"
         }
 
         setTimeout(() => {
-            entrar = false
+            enterIn = false
             document.body.style.cursor = "auto"
         }, 2000)
     }

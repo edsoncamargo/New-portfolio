@@ -87,6 +87,10 @@
                 opacity: 1;
                 background-color: transparent;
 
+                @media not (hover: none) {
+                    opacity: 0;
+                }
+
                 @keyframes pulse-text {
                     from {
                         transform: scale(1);

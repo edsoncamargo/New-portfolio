@@ -1,12 +1,16 @@
 .projects-container {
-    color: var(--ec-color-neutral-100);
+    width: calc(100% + 24px);
+
     background-color: var(--ec-color-primary-dark);
+    color: var(--ec-color-neutral-100);
 
     position: relative;
+
     padding: 50px 100px;
     padding-top: 100px;
 
     @media (max-width: 767px) {
+        width: 100%;
         padding: 24px;
     }
 
@@ -45,11 +49,6 @@
 
             @media (max-width: 1400px) and (min-width: 1295px) {
                 flex-basis: 45%;
-            }
-
-            @media (max-width: 1294px) and (min-width: 867px) {
-                flex-basis: 45%;
-                margin-right: 8px;
             }
 
             @media (max-width: 968px) {
@@ -216,6 +215,21 @@
                     }
                 }
             }
+        }
+    }
+
+    &__connect {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 24px;
+
+        &__message {
+            letter-spacing: 3px;
+        }
+
+        &__button {
+            margin-bottom: 24px;
         }
     }
 }

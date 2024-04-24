@@ -83,8 +83,25 @@ export class OpeningSequenceManager {
         return new Promise((resolve) => {
             setTimeout(() => {
                 document.getElementById("main").classList.add("open")
+                this.dispatchAppStart()
                 resolve()
             }, timeout)
         })
+    }
+
+    dispatchAppStart() {
+        const customEventName = "portfolioStart"
+
+        const customEvent = new CustomEvent(customEventName, {
+            detail: {
+                message: "portfolioStart dispatched",
+                timestamp: new Date()
+            },
+            bubbles: true,
+            cancelable: true
+        })
+
+        const targetElement = document.querySelector("body")
+        targetElement.dispatchEvent(customEvent)
     }
 }
