@@ -1,7 +1,8 @@
 .works-container {
-    color: var(--ec-color-neutral-100);
-    background-color: var(--ec-color-primary-dark);
+    height: 100%;
     position: relative;
+    background-color: var(--ec-color-primary-dark);
+    color: var(--ec-color-neutral-100);
     padding: 62px 100px;
     padding-bottom: calc(62px + 48px);
     margin-bottom: 62px;
@@ -106,8 +107,13 @@
             }
 
             &__job {
+                display: flex;
+                gap: 24px;
+
                 &__left {
                     img {
+                        display: block;
+                        height: 64px;
                         width: 64px;
                     }
                 }

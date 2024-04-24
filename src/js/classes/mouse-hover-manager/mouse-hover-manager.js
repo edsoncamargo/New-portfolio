@@ -11,7 +11,9 @@ export class MouseHoverManager {
     }
 
     startCustomHoverHelloHandler() {
-        document.addEventListener("mousemove", this.#handleMouseMove)
+        setTimeout(() => {
+            document.addEventListener("mousemove", this.#handleMouseMove)
+        }, 3000)
     }
 
     #handleMouseMove = (e) => {

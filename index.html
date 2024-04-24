@@ -121,7 +121,10 @@
         />
         <meta name="theme-color" content="#222455" />
 
-        <link rel="stylesheet" src="/assets/common/lib/aos/aos.css" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <link
             rel="stylesheet"
             href="/dist/ec-portfolio/ec-portfolio.bundle.css"
@@ -134,20 +137,23 @@
 
         <div w3-include-html="./src/includes/home.html"></div>
 
-        <script src="/assets/common/lib/aos/aos.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="/dist/ec-portfolio/ec-portfolio.bundle.js"></script>
         <script>
+            AOS.init()
             new EcPortfolio.MouseHoverManager().startCustomHoverHelloHandler()
             EcPortfolio.Utils.includeHTML()
-            AOS.init()
 
             document
                 .querySelector("body")
-                .addEventListener("portfolioStart", () =>
+                .addEventListener("portfolioStart", () => {
+                    AOS.refresh()
+
                     setTimeout(() => {
-                        AOS.refresh()
-                    }, 4000)
-                )
+                        document.querySelector("body").style.background =
+                            "var(--ec-color-primary-dark)"
+                    }, 1800)
+                })
         </script>
     </body>
 </html>
