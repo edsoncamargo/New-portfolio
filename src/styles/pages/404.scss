@@ -6,10 +6,20 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
+    transform: translateY(50px);
     background: var(--ec-color-primary-dark);
     color: var(--ec-color-neutral-100);
     padding: 24px;
     overflow: hidden;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
     div {
         max-width: 565px;
@@ -52,7 +62,7 @@
             }
 
             &:hover {
-                color: var(--ec-color-primary-medium);
+                opacity: 0.7;
             }
         }
     }
