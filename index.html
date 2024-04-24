@@ -148,12 +148,11 @@
             setTimeout(() => {
                 var animation = bodymovin.loadAnimation({
                     container: document.getElementById("animation-container"),
-                    renderer: "svg", // You can choose renderer as svg, canvas, or html
-                    loop: true, // Whether the animation should loop or not
-                    autoplay: true, // Whether the animation should start playing immediately
-                    path: "/assets/animations/1.json" // Path to your animation JSON file
+                    renderer: "svg",
+                    loop: true,
+                    autoplay: true,
+                    path: "/assets/animations/1.json"
                 })
-                animation.setSpeed(0.5)
             }, 1000)
 
             document
