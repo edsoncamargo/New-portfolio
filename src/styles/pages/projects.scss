@@ -224,6 +224,10 @@
         justify-content: start;
         gap: 24px;
 
+        @media (max-width: 968px) {
+            margin-top: 24px;
+        }
+
         &__message {
             letter-spacing: 3px;
         }
