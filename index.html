@@ -138,11 +138,23 @@
         <div w3-include-html="./src/includes/home.html"></div>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="/assets/lib/lottie/lottie.min.js"></script>
         <script src="/dist/ec-portfolio/ec-portfolio.bundle.js"></script>
         <script>
             AOS.init()
             new EcPortfolio.MouseHoverManager().startCustomHoverHelloHandler()
             EcPortfolio.Utils.includeHTML()
+
+            setTimeout(() => {
+                var animation = bodymovin.loadAnimation({
+                    container: document.getElementById("animation-container"),
+                    renderer: "svg", // You can choose renderer as svg, canvas, or html
+                    loop: true, // Whether the animation should loop or not
+                    autoplay: true, // Whether the animation should start playing immediately
+                    path: "/assets/animations/1.json" // Path to your animation JSON file
+                })
+                animation.setSpeed(0.5)
+            }, 1000)
 
             document
                 .querySelector("body")
