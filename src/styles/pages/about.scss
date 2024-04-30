@@ -85,7 +85,6 @@
         @media (max-width: 1038px) {
             flex-wrap: wrap;
             justify-content: center;
-            flex-direction: column-reverse;
         }
 
         &-left {
@@ -121,6 +120,7 @@
                 border: 1px solid rgba(255, 255, 255, 0.4);
 
                 @media (max-width: 1038px) {
+                    margin-top: 80px;
                     margin-bottom: 40px;
                 }
 
