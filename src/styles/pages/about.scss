@@ -82,16 +82,20 @@
         flex-direction: row;
         justify-content: space-between;
 
-        @media (max-width: 910px) {
+        @media (max-width: 1038px) {
             flex-wrap: wrap;
             justify-content: center;
+            flex-direction: column-reverse;
         }
 
         &-left {
             width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
             margin-right: 50px;
 
-            @media (max-width: 910px) {
+            @media (max-width: 1038px) {
                 width: 100%;
                 margin-right: 0px;
             }
@@ -103,40 +107,153 @@
 
             width: 30%;
 
-            @media (max-width: 910px) {
+            @media (max-width: 1038px) {
                 width: 100%;
                 justify-content: center;
             }
 
-            &-image {
-                height: 300px;
+            &__badge {
+                height: 400px;
                 width: 300px;
+                position: relative;
+                background-color: var(--ec-color-primary);
+                border-radius: 8px;
+                border: 1px solid rgba(255, 255, 255, 0.4);
 
-                @media (max-width: 910px) {
-                    width: 100%;
-                    margin-top: 24px;
-                    margin-bottom: 24px;
+                @media (max-width: 1038px) {
+                    margin-bottom: 40px;
                 }
 
-                .about-container-bottom-right-image__me {
+                @media (max-width: 400px) {
                     width: 100%;
-                    height: 300px;
+                }
 
+                .badge-string {
+                    height: 83px;
+                    width: 80px;
                     display: block;
+                    position: absolute;
+                    top: -68px;
+                    left: 50%;
+                    z-index: 10;
+                    transform: translateX(-50%);
+                    background: rgb(0, 0, 0);
+                    background: -moz-linear-gradient(
+                        180deg,
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 0.5802696078431373) 32%,
+                        rgba(0, 0, 0, 1) 60%,
+                        rgba(0, 0, 0, 1) 100%
+                    );
+                    background: -webkit-linear-gradient(
+                        180deg,
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 0.5802696078431373) 32%,
+                        rgba(0, 0, 0, 1) 60%,
+                        rgba(0, 0, 0, 1) 100%
+                    );
+                    background: linear-gradient(
+                        180deg,
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 0.5802696078431373) 32%,
+                        rgba(0, 0, 0, 1) 60%,
+                        rgba(0, 0, 0, 1) 100%
+                    );
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+                }
 
-                    background: url(/assets/images/jpg/me.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: center;
+                .badge-role {
+                    height: 8px;
+                    width: 96px;
+                    display: block;
+                    position: absolute;
+                    top: 8px;
+                    left: 50%;
+                    z-index: 10;
+                    transform: translateX(-50%);
+                    background-color: #000;
+                    border-radius: 32px;
+                }
 
-                    mix-blend-mode: screen;
+                &__top {
+                    height: 160px;
+                    padding: 32px 24px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+                    position: relative;
+                    overflow: hidden;
 
-                    border-bottom-left-radius: 50%;
-                    border-top-right-radius: 50%;
+                    .badge-skin {
+                        .badge-skin__el {
+                            display: block;
+                            height: 400px;
+                            width: 400px;
 
-                    @media (max-width: 910px) {
+                            position: absolute;
+                            left: -38px;
+                            top: -130px;
+
+                            background-size: contain;
+                            background-image: url("/assets/images/png/Logo.png");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            opacity: 0.6;
+                        }
+                    }
+
+                    &__info {
+                        display: flex;
+                        justify-content: space-between;
                         width: 100%;
-                        background-size: cover;
+                        position: relative;
+                        z-index: 15;
+                    }
+
+                    .badge-avatar {
+                        height: 200px;
+                        width: 200px;
+                        position: absolute;
+                        bottom: -107px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: #000;
+                        border-radius: 999px;
+                    }
+                }
+
+                &__bottom {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 8px;
+                    padding-top: 114px;
+                    position: relative;
+
+                    .badge-image {
+                        height: 180px;
+                        width: 180px;
+                        position: absolute;
+                        bottom: 70px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: url(/assets/images/jpg/me.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        border-radius: 999px;
+                        z-index: 1;
+                    }
+
+                    .badge-name {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+
+                    .badge-email {
+                        font-size: 16px;
+                        font-weight: lighter;
+                        letter-spacing: 2px;
+                        padding: 0px 24px;
                     }
                 }
             }
