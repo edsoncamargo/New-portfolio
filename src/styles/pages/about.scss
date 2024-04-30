@@ -271,5 +271,12 @@
         @media (min-width: 1400px) {
             margin-top: 0px;
         }
+
+        @media (max-width: 1038px) {
+            a {
+                width: 100%;
+                text-align: center;
+            }
+        }
     }
 }
