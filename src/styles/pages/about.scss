@@ -17,6 +17,7 @@
         flex-direction: column;
         position: relative;
         margin-bottom: 92px;
+        overflow: hidden;
 
         @media (max-width: 767px) {
             min-height: 80px;
@@ -261,7 +262,6 @@
     }
 
     &__connect {
-        margin-top: 40px;
         margin-bottom: 40px;
 
         @media (min-width: 1600px) {

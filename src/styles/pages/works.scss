@@ -47,12 +47,15 @@
                 display: flex;
                 gap: 8px;
 
+                @media (max-width: 767px) {
+                    gap: 0px;
+                }
+
                 &__date {
                     min-height: 64px;
                     min-width: 64px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
 
                     span {
                         opacity: 0.6;
@@ -65,10 +68,10 @@
                 }
 
                 &__obj {
-                    height: 50%;
+                    height: calc(50% + 24px);
                     width: 2px;
                     position: relative;
-                    top: 50%;
+                    top: 24px;
                     background-color: var(--ec-color-neutral-100);
                     margin-left: 16px;
 
@@ -110,6 +113,10 @@
                 display: flex;
                 gap: 24px;
 
+                @media (max-width: 767px) {
+                    gap: 8px;
+                }
+
                 &__left {
                     img {
                         display: block;
@@ -119,9 +126,6 @@
                 }
 
                 &__right {
-                    &__title {
-                    }
-
                     &__place {
                         font-size: 0.8em;
                         letter-spacing: 3px;
