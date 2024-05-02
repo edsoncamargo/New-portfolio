@@ -11,6 +11,7 @@ The following are the key technologies and tools used in the development of this
 -   **HTML/Javascript/SCSS**: Core technologies for structuring, scripting, and styling the web page.
 -   **Webpack**: Utilized for bundling JavaScript and CSS files, optimizing the performance of the virtual portfolio.
 -   **Flexbox**: Utilized to create flexible and responsive layouts.
+-   **AOS**: is a JavaScript library for creating smooth scroll animations and interactions on web pages.
 
 ## Hello Screen
 
