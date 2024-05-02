@@ -35,6 +35,54 @@
                 }
             }
 
+            &:nth-child(1) {
+                .works-container__timeline__item__line {
+                    .works-container__timeline__item__line__obj {
+                        em {
+                            background: linear-gradient(
+                                180deg,
+                                rgba(199, 230, 78, 1) 0%,
+                                rgba(102, 102, 250, 1) 100%
+                            );
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                .works-container__timeline__item__line {
+                    .works-container__timeline__item__line__obj {
+                        em {
+                            background-color: #dd294e;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                .works-container__timeline__item__line {
+                    .works-container__timeline__item__line__obj {
+                        em {
+                            background-color: #0073c0;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                .works-container__timeline__item__line {
+                    .works-container__timeline__item__line__obj {
+                        em {
+                            background: linear-gradient(
+                                180deg,
+                                rgba(0, 73, 140, 1) 0%,
+                                rgba(255, 148, 5, 1) 100%
+                            );
+                        }
+                    }
+                }
+            }
+
             &:last-child {
                 .works-container__timeline__item__line {
                     .works-container__timeline__item__line__obj {
