@@ -5,6 +5,7 @@ import { MouseHoverManager } from "../mouse-hover-manager/mouse-hover-manager"
 export class OpeningSequenceManager {
     constructor() {
         this.eCursor = document.querySelector(".cursor")
+        setTimeout(() => this.start(), 4000)
     }
 
     start() {
@@ -105,3 +106,5 @@ export class OpeningSequenceManager {
         targetElement.dispatchEvent(customEvent)
     }
 }
+
+new OpeningSequenceManager()

@@ -36,6 +36,11 @@ body {
     }
 }
 
+.container-max {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 .title-container {
     display: flex;
     align-items: flex-start;
@@ -63,7 +68,6 @@ body {
         font-size: 4rem;
         letter-spacing: -1px;
         line-height: 84px;
-        text-transform: capitalize;
 
         @media (max-width: 767px) {
             max-width: 273px;
@@ -153,6 +157,92 @@ body {
     display: none;
 
     animation: cursor-animation-three 0.5s infinite alternate;
+}
+
+.ec-i {
+    &-angular {
+        background-size: contain;
+        background-image: url(../../assets/images/svg/angular.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &-react {
+        background-size: contain;
+        background-image: url(../../assets/images/svg/react.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &-html {
+        background-size: contain;
+        background-image: url(../../assets/images/svg/html.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &-javascript {
+        background-size: contain;
+        background-image: url(../../assets/images/svg/javascript.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &-jest {
+        background-size: contain;
+        background-image: url(../../assets/images/svg/jest.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &-sass {
+        background-size: contain;
+        background-image: url(../../assets/images/svg/sass.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &-jasmine {
+        background-size: contain;
+        background-image: url(../../assets/images/svg/jasmine.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &-webpack {
+        background-size: contain;
+        background-image: url(../../assets/images/svg/webpack.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &-css {
+        background-size: contain;
+        background-image: url(../../assets/images/svg/css.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &-storybook {
+        background-size: contain;
+        background-image: url(../../assets/images/svg/storybook.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &-tailwindcss {
+        background-size: contain;
+        background-image: url(../../assets/images/svg/tailwindcss.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &-typescript {
+        background-size: contain;
+        background-image: url(../../assets/images/svg/typescript.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 @keyframes cursor-animation {

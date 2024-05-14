@@ -155,6 +155,8 @@
                 })
             }, 1000)
 
+            document.querySelector("body").style.overflowY = "hidden"
+
             document
                 .querySelector("body")
                 .addEventListener("portfolioStart", () => {
@@ -163,7 +165,8 @@
                     setTimeout(() => {
                         document.querySelector("body").style.background =
                             "var(--ec-color-primary-dark)"
-                    }, 2000)
+                        document.querySelector("body").style.overflowY = "auto"
+                    }, 2400)
                 })
         </script>
     </body>
