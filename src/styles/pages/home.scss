@@ -237,17 +237,17 @@
         background-color: var(--ec-color-primary-dark);
         position: relative;
         z-index: 1;
-        transition: transform 2s ease-out;
+        transition: transform 1s ease-out;
 
         &.open {
-            transform: translateX(-3000px);
+            transform: translateX(-1000px);
         }
 
-        animation: leftIn 2.4s;
+        animation: leftIn 1s;
 
         @keyframes leftIn {
             0% {
-                transform: translateX(-3000px);
+                transform: translateX(-1000px);
             }
             100% {
                 transform: translateX(0px);
@@ -264,14 +264,14 @@
         transition: transform 1s ease-out;
 
         &.open {
-            transform: translateX(3000px);
+            transform: translateX(1000px);
         }
 
-        animation: rightIn 1s;
+        animation: rightIn 1.1s;
 
         @keyframes rightIn {
             0% {
-                transform: translateX(3000px);
+                transform: translateX(1000px);
             }
             100% {
                 transform: translateX(0px);

@@ -245,6 +245,18 @@ body {
     }
 }
 
+.noise {
+    content: "";
+    position: fixed;
+    background-image: url(../../assets/images/webp/noise.webp);
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    inset: 0;
+    opacity: 0.75;
+    z-index: 100;
+    pointer-events: none;
+}
+
 @keyframes cursor-animation {
     from {
         transform: scale(1);

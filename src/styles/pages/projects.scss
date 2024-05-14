@@ -19,9 +19,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        &:nth-child(1) {
-        }
-
         .projects-container-card {
             height: 350px;
             min-height: 350px;
@@ -150,6 +147,15 @@
                         letter-spacing: 3px;
                     }
                 }
+            }
+        }
+
+        &:nth-child(1) {
+            .projects-container-card {
+                background-size: contain;
+                background-image: url(../../assets/images/png/sphinx.png);
+                background-position: center;
+                background-repeat: no-repeat;
             }
         }
     }
