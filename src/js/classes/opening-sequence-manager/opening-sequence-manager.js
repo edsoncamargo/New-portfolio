@@ -1,6 +1,5 @@
 import { ThemeManager } from "../theme-manager/theme-manager"
 import { ParallaxEffectManager } from "../parallax-effect-manager/parallax-effect-manager"
-import { SkillsCarousel } from "../skills-carousel/skills-carousel"
 import { MouseHoverManager } from "../mouse-hover-manager/mouse-hover-manager"
 export class OpeningSequenceManager {
     constructor() {
@@ -75,7 +74,6 @@ export class OpeningSequenceManager {
             new ThemeManager().start()
             new MouseHoverManager().startCustomCursorClickHandler()
             new ParallaxEffectManager().start()
-            new SkillsCarousel().start()
             resolve()
         })
     }
