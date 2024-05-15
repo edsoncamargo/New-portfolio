@@ -12,17 +12,17 @@
     padding: 24px;
     overflow: hidden;
     opacity: 0;
-    animation: fadeInUp 1s ease forwards;
-
-    @keyframes fadeInUp {
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
 
     div {
         max-width: 565px;
+        animation: fadeInUp 1s ease forwards;
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
         p {
             font-size: 2em;
