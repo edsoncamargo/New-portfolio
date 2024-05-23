@@ -40,8 +40,8 @@ To explore this virtual portfolio on your local machine, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/edsoncamargo/portfolio
-    cd your-path/Portfolio
+    git clone https://github.com/edsoncamargo/portfolio.git
+    cd your-path/portfolio
     ```
 
 2. Install the dependencies:
