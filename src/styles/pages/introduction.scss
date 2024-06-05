@@ -116,7 +116,7 @@
 
             position: relative;
 
-            span.am {
+            .am {
                 align-self: start;
                 margin-left: 50px;
                 margin-bottom: 45px;
@@ -142,7 +142,7 @@
                 }
             }
 
-            h1.name {
+            .name {
                 font-size: 8vw;
                 font-weight: 900;
                 letter-spacing: 12px;
@@ -168,7 +168,7 @@
                 }
             }
 
-            span.title {
+            .title {
                 align-self: flex-end;
                 margin-right: 50px;
                 margin-top: 45px;

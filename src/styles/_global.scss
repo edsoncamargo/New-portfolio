@@ -254,6 +254,13 @@ body {
     pointer-events: none;
 }
 
+.sr-only {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
 @keyframes cursor-animation {
     from {
         transform: scale(1);

@@ -1,10 +1,42 @@
 import { ThemeManager } from "../theme-manager/theme-manager"
 import { ParallaxEffectManager } from "../parallax-effect-manager/parallax-effect-manager"
 import { MouseHoverManager } from "../mouse-hover-manager/mouse-hover-manager"
+
+const ANIMATION_TIME_IN_SECONDS = 4
+const ANIMATION_TIME_IN_MS = ANIMATION_TIME_IN_SECONDS * 1000
+
 export class OpeningSequenceManager {
     constructor() {
         this.eCursor = document.querySelector(".cursor")
-        setTimeout(() => this.start(), 4000)
+        this.loadingStatus = document.getElementById("loading-message")
+
+        this.updateLoadingStatus()
+
+        setTimeout(() => this.start(), ANIMATION_TIME_IN_MS)
+    }
+
+    updateLoadingStatus() {
+        let currentTimeInSeconds = 0
+
+        this.loadingInterval = setInterval(() => {
+            currentTimeInSeconds++
+
+            if (currentTimeInSeconds <= ANIMATION_TIME_IN_SECONDS) {
+                if (currentTimeInSeconds === 1) {
+                    this.loadingStatus.textContent = `Hello, 4 segundos para carregar página inicial.`
+                } else if (currentTimeInSeconds === ANIMATION_TIME_IN_SECONDS) {
+                    this.loadingStatus.textContent = "Página inicial carregada."
+                }
+            } else {
+                clearInterval(this.loadingInterval)
+                this.loadingStatus.style.display = "none"
+
+                const firstText = document.getElementById("first-text")
+                setTimeout(() => {
+                    firstText.focus()
+                }, 1000)
+            }
+        }, 1000)
     }
 
     start() {
