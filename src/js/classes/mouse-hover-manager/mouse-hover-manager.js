@@ -6,47 +6,7 @@ export class MouseHoverManager {
     }
 
     #getElements() {
-        this.eCursor = document.querySelector(".cursor")
         this.eCursorClick = document.querySelector(".cursor-click")
-    }
-
-    startCustomHoverHelloHandler() {
-        setTimeout(() => {
-            document.addEventListener("mousemove", this.#handleMouseMove)
-        }, 3000)
-    }
-
-    #handleMouseMove = (e) => {
-        const eHello = document.getElementById("hello")
-        const eHelloRect = eHello.getBoundingClientRect()
-
-        if (
-            this.#isHelloHovered(e, eHelloRect) &&
-            Boolean(this.eCursor.classList.contains("none-cursor") === false)
-        ) {
-            this.#showCursor(e.pageY - 40, e.pageX - 40)
-        } else {
-            this.#hideCursor()
-        }
-    }
-
-    #isHelloHovered(e, eHelloRect) {
-        return (
-            e.pageY > eHelloRect.y &&
-            e.pageY < eHelloRect.y + eHelloRect.height &&
-            e.pageX > eHelloRect.x &&
-            e.pageX < eHelloRect.x + eHelloRect.width
-        )
-    }
-
-    #showCursor(top, left) {
-        document.body.style.cursor = "none"
-        this.eCursor.style.cssText = `top: ${top}px; left: ${left}px; display: inline-block;`
-    }
-
-    #hideCursor() {
-        document.body.style.cursor = "auto"
-        this.eCursor.style.cssText = "top: auto; left: auto; display: none;"
     }
 
     #setAutoCursorAfterDelay() {

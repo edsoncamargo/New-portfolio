@@ -43,63 +43,6 @@
             }
         }
 
-        &:after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 0%;
-            position: absolute;
-            top: 50%;
-            left: 0px;
-            transform: translateY(-50%);
-            z-index: -1;
-            opacity: 0.4;
-
-            @media (max-width: 767px) {
-                content: "👆🏼";
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                font-size: 24px;
-                color: var(--ec-color-neutral-100);
-                -webkit-text-stroke: 0px transparent;
-
-                width: 50px;
-                height: 50px;
-
-                background-image: none;
-
-                position: absolute;
-
-                top: 32px;
-                right: 24px;
-                left: auto;
-
-                transform: none;
-
-                animation: none;
-                animation: 0.6s ease-in-out infinite alternate pulse-text;
-                opacity: 1;
-                background-color: transparent;
-
-                @media not (hover: none) {
-                    opacity: 0;
-                }
-
-                @keyframes pulse-text {
-                    from {
-                        transform: scale(1);
-                    }
-
-                    to {
-                        transform: scale(1.2);
-                    }
-                }
-            }
-        }
-
         &.opening {
             &::before {
                 position: absolute;

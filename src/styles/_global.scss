@@ -90,55 +90,6 @@ body {
     display: none;
 }
 
-.cursor {
-    opacity: 0;
-    width: 80px;
-    height: 80px;
-
-    border: 2px dashed var(--ec-color-primary);
-    border-radius: 50px;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 9999;
-
-    pointer-events: none;
-
-    animation: cursor-animation 0.5s infinite alternate;
-
-    display: none;
-
-    &::after {
-        content: "🖱️";
-
-        color: var(--ec-color-primary);
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        font-weight: bold;
-        font-size: 2.4em;
-
-        width: 80px;
-        height: 80px;
-
-        position: absolute;
-
-        border: 40px solid var(--ec-color-primary);
-        border-radius: 50%;
-        opacity: 1;
-
-        top: -42px;
-        left: -42px;
-
-        background: rgba(35, 37, 93, 0.9);
-
-        animation: cursor-animation-two 0.5s infinite alternate;
-    }
-}
-
 .cursor-click {
     width: 20px;
     height: 20px;

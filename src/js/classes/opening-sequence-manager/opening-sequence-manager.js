@@ -21,10 +21,10 @@ export class OpeningSequenceManager {
         this.loadingInterval = setInterval(() => {
             currentTimeInSeconds++
 
-            if (currentTimeInSeconds <= ANIMATION_TIME_IN_SECONDS) {
+            if (currentTimeInSeconds <= 7) {
                 if (currentTimeInSeconds === 1) {
                     this.loadingStatus.textContent = `Hello, 4 segundos para carregar página inicial.`
-                } else if (currentTimeInSeconds === ANIMATION_TIME_IN_SECONDS) {
+                } else if (currentTimeInSeconds === 7) {
                     this.loadingStatus.textContent = "Página inicial carregada."
                 }
             } else {
@@ -34,7 +34,7 @@ export class OpeningSequenceManager {
                 const firstText = document.getElementById("first-text")
                 setTimeout(() => {
                     firstText.focus()
-                }, 1000)
+                }, 3000)
             }
         }, 1000)
     }
