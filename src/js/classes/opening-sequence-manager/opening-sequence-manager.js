@@ -23,7 +23,8 @@ export class OpeningSequenceManager {
 
             if (currentTimeInSeconds <= 7) {
                 if (currentTimeInSeconds === 1) {
-                    this.loadingStatus.textContent = `Hello, 4 segundos para carregar página inicial.`
+                    this.loadingStatus.textContent =
+                        "Hello, 4 segundos para carregar página inicial."
                 } else if (currentTimeInSeconds === 7) {
                     this.loadingStatus.textContent = "Página inicial carregada."
                 }
@@ -33,6 +34,7 @@ export class OpeningSequenceManager {
 
                 const firstText = document.getElementById("first-text")
                 setTimeout(() => {
+                    clearInterval(this.loadingInterval)
                     firstText.focus()
                 }, 1000)
             }
@@ -40,27 +42,16 @@ export class OpeningSequenceManager {
     }
 
     start() {
-        this.hideCustomCursorWhenClickHello(0)
-            .then(() => ThemeManager.applyTimeClassIn(".container"))
-            .then(() => this.openDoors(100))
+        this.openDoors(100)
             .then(() => this.animateHello(600))
             .then(() => this.animateHome(1000))
             .then(() => this.startManagers())
             .then(() => this.showAllLandingPageSessions(200))
     }
 
-    hideCustomCursorWhenClickHello(timeout) {
-        return new Promise((resolve) => {
-            this.eCursor.setAttribute(
-                "style",
-                "top: auto; left: auto; display: none;"
-            )
-            this.eCursor.classList.add("none-cursor")
-            setTimeout(resolve, timeout)
-        })
-    }
-
     openDoors(timeout) {
+        ThemeManager.applyTimeClassIn(".container")
+
         return new Promise((resolve) => {
             setTimeout(() => {
                 document.querySelector(".left").classList.add("open")
