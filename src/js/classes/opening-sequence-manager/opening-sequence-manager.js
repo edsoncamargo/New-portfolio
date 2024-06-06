@@ -34,7 +34,7 @@ export class OpeningSequenceManager {
                 const firstText = document.getElementById("first-text")
                 setTimeout(() => {
                     firstText.focus()
-                }, 3000)
+                }, 1000)
             }
         }, 1000)
     }

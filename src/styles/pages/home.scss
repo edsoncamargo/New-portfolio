@@ -35,10 +35,6 @@
         animation: fadeIn 1.6s forwards;
         animation-delay: 1s;
 
-        &:focus {
-            outline: none;
-        }
-
         @keyframes fadeIn {
             0% {
                 opacity: 0;
