@@ -24,73 +24,6 @@
             display: flex;
             gap: 24px;
 
-            &:first-child {
-                .works-container__timeline__item__line {
-                    .works-container__timeline__item__line__obj {
-                        &:before {
-                            content: "";
-                            background-color: transparent;
-                        }
-                    }
-                }
-            }
-
-            &:nth-child(1) {
-                .works-container__timeline__item__line {
-                    .works-container__timeline__item__line__obj {
-                        em {
-                            background: linear-gradient(
-                                180deg,
-                                rgba(199, 230, 78, 1) 0%,
-                                rgba(102, 102, 250, 1) 100%
-                            );
-                        }
-                    }
-                }
-            }
-
-            &:nth-child(2) {
-                .works-container__timeline__item__line {
-                    .works-container__timeline__item__line__obj {
-                        em {
-                            background-color: #dd294e;
-                        }
-                    }
-                }
-            }
-
-            &:nth-child(3) {
-                .works-container__timeline__item__line {
-                    .works-container__timeline__item__line__obj {
-                        em {
-                            background-color: #0073c0;
-                        }
-                    }
-                }
-            }
-
-            &:nth-child(4) {
-                .works-container__timeline__item__line {
-                    .works-container__timeline__item__line__obj {
-                        em {
-                            background: linear-gradient(
-                                180deg,
-                                rgba(0, 73, 140, 1) 0%,
-                                rgba(255, 148, 5, 1) 100%
-                            );
-                        }
-                    }
-                }
-            }
-
-            &:last-child {
-                .works-container__timeline__item__line {
-                    .works-container__timeline__item__line__obj {
-                        background-color: transparent;
-                    }
-                }
-            }
-
             &__line {
                 display: flex;
                 gap: 8px;
@@ -116,7 +49,7 @@
                 }
 
                 &__obj {
-                    height: calc(50% + 58px);
+                    height: calc(100% + 40px);
                     width: 2px;
                     position: relative;
                     top: 24px;
@@ -129,7 +62,6 @@
                         height: calc(100% + 32px);
                         width: 2px;
                         position: relative;
-                        top: calc(-100% - 32px);
                         background-color: var(--ec-color-neutral-100);
                     }
 
@@ -186,6 +118,99 @@
                         flex-direction: column;
                         gap: 8px;
                         margin-top: 16px;
+                    }
+                }
+            }
+
+            &:first-child {
+                .works-container__timeline__item__line {
+                    .works-container__timeline__item__line__obj {
+                        &:before {
+                            content: "";
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(1) {
+                .works-container__timeline__item__line {
+                    .works-container__timeline__item__line__obj {
+                        em {
+                            background: #213e7f;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                .works-container__timeline__item__line {
+                    .works-container__timeline__item__line__obj {
+                        em {
+                            background: linear-gradient(
+                                180deg,
+                                rgba(199, 230, 78, 1) 0%,
+                                rgba(102, 102, 250, 1) 100%
+                            );
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                .works-container__timeline__item__line {
+                    .works-container__timeline__item__line__obj {
+                        em {
+                            background-color: #dd294e;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                .works-container__timeline__item__line {
+                    .works-container__timeline__item__line__obj {
+                        &::before {
+                            background-color: transparent;
+                            height: 0px !important;
+                        }
+
+                        em {
+                            background-color: #0073c0;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(5) {
+                .works-container__timeline__item__line {
+                    .works-container__timeline__item__line__obj {
+                        &::before {
+                            background-color: transparent;
+                            height: 0px !important;
+                        }
+
+                        em {
+                            background: linear-gradient(
+                                180deg,
+                                rgba(0, 73, 140, 1) 0%,
+                                rgba(255, 148, 5, 1) 100%
+                            );
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                .works-container__timeline__item__line {
+                    .works-container__timeline__item__line__obj {
+                        background-color: transparent;
+                        height: 0px !important;
+
+                        &::before {
+                            background-color: transparent;
+                            height: 0px !important;
+                        }
                     }
                 }
             }
