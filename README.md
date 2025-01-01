@@ -8,10 +8,10 @@
 
 The following are the key technologies and tools used in the development of this app:
 
--   **HTML/Javascript/SCSS**: Core technologies for structuring, scripting, and styling the web page.
--   **Webpack**: Utilized for bundling JavaScript and CSS files, optimizing the performance of the virtual portfolio.
--   **Flexbox**: Utilized to create flexible and responsive layouts.
--   **AOS**: is a JavaScript library for creating smooth scroll animations and interactions on web pages.
+- **HTML/Javascript/SCSS**: Core technologies for structuring, scripting, and styling the web page.
+- **Webpack**: Utilized for bundling JavaScript and CSS files, optimizing the performance of the virtual portfolio.
+- **Flexbox**: Utilized to create flexible and responsive layouts.
+- **AOS**: is a JavaScript library for creating smooth scroll animations and interactions on web pages.
 
 ## Hello Screen
 
@@ -56,7 +56,7 @@ To explore this virtual portfolio on your local machine, follow these steps:
     npm run build:dev
     ```
 
--   Install Live Server in VSCode extensions with `@recommended` and launch `index.html` 🚀
+- Install Live Server in VSCode extensions with `@recommended` and launch `index.html` 🚀
 
 ## Contribution
 
@@ -68,7 +68,7 @@ This project is licensed under the [MIT LICENSE](./LICENSE).
 
 ## Contact
 
--   Name: Edson Camargo Menezes
--   Email: contact@edsoncamargo.dev
+- Name: Edson Camargo Menezes
+- Email: contact@edsoncamargo.dev
 
 Embark on a journey through my portfolio and explore the narrative of my professional endeavors 🌟
